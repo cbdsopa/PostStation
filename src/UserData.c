@@ -1,6 +1,5 @@
 #include "UserData.h"
 #include <stdlib.h>
-#include <string.h>
 
 UserData CreateUser(long long PhoneNumber, char *name, char *password, int UserStatus, int TransStatus, int TransSize){
 	UserData user;
@@ -8,9 +7,8 @@ UserData CreateUser(long long PhoneNumber, char *name, char *password, int UserS
 	int NameLen = strlen(name) + 1;
 	user.name = (char *)malloc(sizeof(char) * NameLen);
 	strcpy(user.name, name);
-
-	int PassWordLen = strlen(password);
-	user.password = (char *)malloc(sizeof(char) * PassWordLen);
+	int PasswordLen = strlen(password) + 1;
+	user.password = (char *)malloc(sizeof(char) * PasswordLen);
 	strcpy(user.password, password);
 
 	user.PhoneNumber = PhoneNumber;
@@ -22,8 +20,10 @@ UserData CreateUser(long long PhoneNumber, char *name, char *password, int UserS
 	user.PackageCount = 0;
 }
 
-void DeleteUser(UserData *user){
-	free(user->name);
-	free(user->password);
+int DeleteUser(UserData *user){
+	if(user == NULL) return 0;
+	if(user->name != NULL) free(user->name);
+	if(user->password != NULL) free(user->password);
 	memset(user, 0, sizeof(user) );
+	return 1;
 }

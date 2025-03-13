@@ -15,6 +15,7 @@ typedef struct{
 		8 会员
 		16 管理员
 		32 快递员
+		64 忙碌
 	*/
 	int TransStatus;
 	/*
@@ -30,4 +31,4 @@ typedef struct{
 }UserData;
 
 UserData CreateUser(long long, char*, char*, int, int, int);
-void DeleteUser(UserData*);
+int DeleteUser(UserData*);
