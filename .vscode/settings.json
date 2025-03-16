@@ -1,5 +1,6 @@
 {
 	"files.associations": {
-		"userdata.h": "c"
+		"userdata.h": "c",
+		"filemanage.h": "c"
 	}
 }

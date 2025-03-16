@@ -1,5 +1,7 @@
 #pragma once
 
+#include "List.h"
+
 typedef struct{
 	long long PhoneNumber;
 	// 1xx - xxxx - xxx
@@ -28,6 +30,7 @@ typedef struct{
 	// 超过 30 后不再计数
 	int level;
 	// 1 ~ 3 
+	List *package;
 }UserData;
 
 UserData CreateUser(long long, char*, char*, int, int, int);
