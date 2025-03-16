@@ -1,5 +1,6 @@
 #include "UserData.h"
 #include <stdlib.h>
+#include <string.h>
 
 UserData CreateUser(long long PhoneNumber, char *name, char *password, int UserStatus, int TransStatus, int TransSize){
 	UserData user;
@@ -21,9 +22,9 @@ UserData CreateUser(long long PhoneNumber, char *name, char *password, int UserS
 }
 
 int DeleteUser(UserData *user){
-	if(user == NULL) return 0;
+	if(user == NULL) return -1;
 	if(user->name != NULL) free(user->name);
 	if(user->password != NULL) free(user->password);
 	memset(user, 0, sizeof(user) );
-	return 1;
+	return 0;
 }

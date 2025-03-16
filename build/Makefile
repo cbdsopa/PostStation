@@ -128,6 +128,54 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+src/List.obj: src/List.c.obj
+.PHONY : src/List.obj
+
+# target to build an object file
+src/List.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/List.c.obj
+.PHONY : src/List.c.obj
+
+src/List.i: src/List.c.i
+.PHONY : src/List.i
+
+# target to preprocess a source file
+src/List.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/List.c.i
+.PHONY : src/List.c.i
+
+src/List.s: src/List.c.s
+.PHONY : src/List.s
+
+# target to generate assembly for a file
+src/List.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/List.c.s
+.PHONY : src/List.c.s
+
+src/PackageData.obj: src/PackageData.c.obj
+.PHONY : src/PackageData.obj
+
+# target to build an object file
+src/PackageData.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/PackageData.c.obj
+.PHONY : src/PackageData.c.obj
+
+src/PackageData.i: src/PackageData.c.i
+.PHONY : src/PackageData.i
+
+# target to preprocess a source file
+src/PackageData.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/PackageData.c.i
+.PHONY : src/PackageData.c.i
+
+src/PackageData.s: src/PackageData.c.s
+.PHONY : src/PackageData.s
+
+# target to generate assembly for a file
+src/PackageData.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/PackageData.c.s
+.PHONY : src/PackageData.c.s
+
 src/UserData.obj: src/UserData.c.obj
 .PHONY : src/UserData.obj
 
@@ -185,6 +233,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... main
+	@echo ... src/List.obj
+	@echo ... src/List.i
+	@echo ... src/List.s
+	@echo ... src/PackageData.obj
+	@echo ... src/PackageData.i
+	@echo ... src/PackageData.s
 	@echo ... src/UserData.obj
 	@echo ... src/UserData.i
 	@echo ... src/UserData.s

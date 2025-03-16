@@ -1,5 +1,6 @@
 #include "PackageData.h"
 #include <stdlib.h>
+#include <string.h>
 
 PackageData CreatePackage(long long PhoneNumber, char *name, double distance, double volume, double weight,
 	char *PlaceFrom, char *PlaceTo, int status){
@@ -22,10 +23,10 @@ PackageData CreatePackage(long long PhoneNumber, char *name, double distance, do
 	strcpy(package.PlaceTo, PlaceTo);
 }
 int DeletePackage(PackageData *package){
-	if(package == NULL) return 0;
+	if(package == NULL) return -1;
 	if(package->name != NULL) free(package->name);
 	if(package->PlaceFrom != NULL) free(package->PlaceFrom);
 	if(package->PlaceTo != NULL) free(package->PlaceTo);
 	memset(package, 0, sizeof(package) );
-	return 1;
+	return 0;
 }
