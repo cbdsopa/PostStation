@@ -1,11 +1,11 @@
 #include "List.h"
 #include <stdlib.h>
 
-int List_Init(List *list){
-	if(list == NULL) return 1;
+List *List_Create(){
+	List *list = (List *)malloc(sizeof(List) );
 	list->head = NULL;
 	list->count = 0;
-	return 0;
+	return list;
 }
 
 int List_Insert(List *list, const void *data, const size_t siz){
