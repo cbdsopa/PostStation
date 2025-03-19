@@ -3,8 +3,8 @@
 typedef struct{
 	long long PhoneNumber;
 	// 1xx - xxxx - xxx
-	char *name;
-	// 1 - 20 个字符
+	char name[20];
+	// 1 - 19 个字符
 	double distance;
 	// (0, 10000] km
 	double volume;
@@ -16,8 +16,8 @@ typedef struct{
 	*/
 	double weight;
 	// (0, 200] kg ，大于 100 kg 算超重
-	char *PlaceFrom, *PlaceTo;
-	// 1 - 20 个字符
+	char PlaceFrom[20], *PlaceTo[20];
+	// 1 - 19 个字符
 	int status;
 	/*
 		1 贵重
@@ -28,4 +28,3 @@ typedef struct{
 }PackageData;
 
 PackageData CreatePackage(long long, char*, double, double, double, char*, char*, int);
-int DeletePackage(PackageData*);

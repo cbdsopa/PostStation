@@ -5,9 +5,9 @@
 typedef struct{
 	long long PhoneNumber;
 	// 1xx - xxxx - xxx
-	char *name;
+	char name[20];
 	// 1 ~ 20 个字符
-	char *password;
+	char password[20];
 	// 1 ~ 20 个字符
 	int UserStatus;
 	/*
@@ -30,8 +30,8 @@ typedef struct{
 	// 超过 30 后不再计数
 	int level;
 	// 1 ~ 3 
-	List *package;
+	List package;
+	List vehicle;
 }UserData;
 
 UserData CreateUser(long long, char*, char*, int, int, int);
-int DeleteUser(UserData*);

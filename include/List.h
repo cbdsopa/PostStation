@@ -12,7 +12,7 @@ typedef struct{
 	int count;
 }List;
 
-List *List_Init();
+List List_Init();
 int List_Insert(List *, const void *, const size_t);
 int List_Delete(List *, const void *, const size_t);
 int List_Find(List *, const void *, const size_t);

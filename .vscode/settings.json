@@ -3,6 +3,7 @@
 		"userdata.h": "c",
 		"filemanage.h": "c",
 		"trie.h": "c",
-		"format": "c"
+		"format": "c",
+		"packagedata.h": "c"
 	}
 }

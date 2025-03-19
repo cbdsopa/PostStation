@@ -1,10 +1,10 @@
 #include "List.h"
 #include <stdlib.h>
 
-List *List_Create(){
-	List *list = (List *)malloc(sizeof(List) );
-	list->head = NULL;
-	list->count = 0;
+List List_Create(){
+	List list;
+	list.head = NULL;
+	list.count = 0;
 	return list;
 }
 

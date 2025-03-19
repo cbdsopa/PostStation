@@ -12,21 +12,8 @@ PackageData CreatePackage(long long PhoneNumber, char *name, double distance, do
 	package.weight = weight;
 	package.status = status;
 
-	int NameLen = strlen(name) + 1;
-	package.name = (char *)malloc(sizeof(char) * NameLen);
 	strcpy(package.name, name);
-	int FromLen = strlen(PlaceFrom) + 1;
-	package.PlaceFrom = (char *)malloc(sizeof(char) * FromLen);
 	strcpy(package.PlaceFrom, PlaceFrom);
-	int ToLen = strlen(PlaceTo) + 1;
-	package.PlaceTo = (char *)malloc(sizeof(char) * ToLen);
 	strcpy(package.PlaceTo, PlaceTo);
-}
-int DeletePackage(PackageData *package){
-	if(package == NULL) return -1;
-	if(package->name != NULL) free(package->name);
-	if(package->PlaceFrom != NULL) free(package->PlaceFrom);
-	if(package->PlaceTo != NULL) free(package->PlaceTo);
-	memset(package, 0, sizeof(package) );
-	return 0;
+	return package;
 }
