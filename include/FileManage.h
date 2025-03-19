@@ -2,6 +2,9 @@
 
 #include <stdio.h>
 
+extern int InputType;
+extern FILE *STDIN, *STDOUT;
+
 FILE *UserOutput(long long);
 int UserOutClean(long long);
 FILE *UserInfoSave(long long);

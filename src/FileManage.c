@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 FILE *UserOutput(long long PhoneNumber){
-	char path[33];
+	char path[32];
 	sprintf(path, "../data/user/%lld/log.txt", PhoneNumber);
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
@@ -13,7 +13,7 @@ FILE *UserOutput(long long PhoneNumber){
 }
 
 int UserOutClean(long long PhoneNumber){
-	char path[33];
+	char path[32];
 	sprintf(path, "../data/user/%lld/log.txt", PhoneNumber);
 	FILE *file = fopen(path, "w");
 	if(file == NULL){
@@ -93,7 +93,7 @@ int UserVehicleInfoClear(long long PhoneNumber){
 }
 
 FILE *WarehouseInfoSave(){
-	char path[36];
+	char path[27];
 	sprintf(path, "../data/warehouse/data.txt");
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
@@ -104,7 +104,7 @@ FILE *WarehouseInfoSave(){
 }
 
 int WarehouseInfoClear(){
-	char path[36];
+	char path[27];
 	sprintf(path, "../data/warehouse/data.txt");
 	FILE *file = fopen(path, "w");
 	if(file == NULL){
