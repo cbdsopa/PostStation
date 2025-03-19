@@ -2,7 +2,7 @@
 
 #include "List.h"
 
-typedef struct{
+struct UserData{
 	long long PhoneNumber;
 	// 1xx - xxxx - xxx
 	char name[20];
@@ -32,6 +32,6 @@ typedef struct{
 	// 1 ~ 3 
 	struct List package;
 	struct List vehicle;
-}UserData;
+};
 
-UserData CreateUser(long long, char*, char*, int, int, int);
+struct UserData CreateUser(long long, char*, char*, int, int, int);
