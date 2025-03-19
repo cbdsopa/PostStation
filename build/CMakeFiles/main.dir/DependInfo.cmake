@@ -8,8 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/OI/Project/C course design/PostStation/src/FileManage.c" "CMakeFiles/main.dir/src/FileManage.c.obj" "gcc" "CMakeFiles/main.dir/src/FileManage.c.obj.d"
   "D:/OI/Project/C course design/PostStation/src/List.c" "CMakeFiles/main.dir/src/List.c.obj" "gcc" "CMakeFiles/main.dir/src/List.c.obj.d"
   "D:/OI/Project/C course design/PostStation/src/PackageData.c" "CMakeFiles/main.dir/src/PackageData.c.obj" "gcc" "CMakeFiles/main.dir/src/PackageData.c.obj.d"
+  "D:/OI/Project/C course design/PostStation/src/Trie.c" "CMakeFiles/main.dir/src/Trie.c.obj" "gcc" "CMakeFiles/main.dir/src/Trie.c.obj.d"
   "D:/OI/Project/C course design/PostStation/src/UserData.c" "CMakeFiles/main.dir/src/UserData.c.obj" "gcc" "CMakeFiles/main.dir/src/UserData.c.obj.d"
   "D:/OI/Project/C course design/PostStation/src/main.c" "CMakeFiles/main.dir/src/main.c.obj" "gcc" "CMakeFiles/main.dir/src/main.c.obj.d"
   )

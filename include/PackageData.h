@@ -16,7 +16,7 @@ typedef struct{
 	*/
 	double weight;
 	// (0, 200] kg ，大于 100 kg 算超重
-	char PlaceFrom[20], *PlaceTo[20];
+	char PlaceFrom[20], PlaceTo[20];
 	// 1 - 19 个字符
 	int status;
 	/*

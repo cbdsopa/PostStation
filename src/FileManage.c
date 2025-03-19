@@ -7,7 +7,7 @@ FILE *UserOutput(long long PhoneNumber){
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
 		fprintf(stderr, "Error: file %lld's log open failed.\n", PhoneNumber);
-		return -1;
+		return NULL;
 	}
 	return file;
 }
@@ -30,7 +30,7 @@ FILE *UserInfoSave(long long PhoneNumber){
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
 		fprintf(stderr, "Error: file %lld's data open failed.\n", PhoneNumber);
-		return -1;
+		return NULL;
 	}
 	return file;
 }
@@ -53,11 +53,11 @@ FILE *UserPackageInfoSave(long long PhoneNumber){
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
 		fprintf(stderr, "Error: file %lld's data open failed.\n", PhoneNumber);
-		return -1;
+		return NULL;
 	}
 	return file;
 }
-int UserVehicleInfoClear(long long PhoneNumber){
+int UserPackageInfoClear(long long PhoneNumber){
 	char path[36];
 	sprintf(path, "../data/user/%lld/package.txt", PhoneNumber);
 	FILE *file = fopen(path, "w");
@@ -75,7 +75,7 @@ FILE *UserVehicleInfoSave(long long PhoneNumber){
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
 		fprintf(stderr, "Error: file %lld's data open failed.\n", PhoneNumber);
-		return -1;
+		return NULL;
 	}
 	return file;
 }
@@ -98,7 +98,7 @@ FILE *WarehouseInfoSave(){
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
 		fprintf(stderr, "Error: file warehouse data open failed.\n");
-		return -1;
+		return NULL;
 	}
 	return file;
 }

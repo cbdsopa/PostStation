@@ -71,11 +71,26 @@ include CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/codegen:
 .PHONY : CMakeFiles/main.dir/codegen
 
+CMakeFiles/main.dir/src/FileManage.c.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/FileManage.c.obj: CMakeFiles/main.dir/includes_C.rsp
+CMakeFiles/main.dir/src/FileManage.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/FileManage.c
+CMakeFiles/main.dir/src/FileManage.c.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/src/FileManage.c.obj"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/FileManage.c.obj -MF CMakeFiles\main.dir\src\FileManage.c.obj.d -o CMakeFiles\main.dir\src\FileManage.c.obj -c "D:\OI\Project\C course design\PostStation\src\FileManage.c"
+
+CMakeFiles/main.dir/src/FileManage.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/FileManage.c.i"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\OI\Project\C course design\PostStation\src\FileManage.c" > CMakeFiles\main.dir\src\FileManage.c.i
+
+CMakeFiles/main.dir/src/FileManage.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/FileManage.c.s"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\OI\Project\C course design\PostStation\src\FileManage.c" -o CMakeFiles\main.dir\src\FileManage.c.s
+
 CMakeFiles/main.dir/src/List.c.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/List.c.obj: CMakeFiles/main.dir/includes_C.rsp
 CMakeFiles/main.dir/src/List.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/List.c
 CMakeFiles/main.dir/src/List.c.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/src/List.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/src/List.c.obj"
 	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/List.c.obj -MF CMakeFiles\main.dir\src\List.c.obj.d -o CMakeFiles\main.dir\src\List.c.obj -c "D:\OI\Project\C course design\PostStation\src\List.c"
 
 CMakeFiles/main.dir/src/List.c.i: cmake_force
@@ -90,7 +105,7 @@ CMakeFiles/main.dir/src/PackageData.c.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/PackageData.c.obj: CMakeFiles/main.dir/includes_C.rsp
 CMakeFiles/main.dir/src/PackageData.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/PackageData.c
 CMakeFiles/main.dir/src/PackageData.c.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/src/PackageData.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/main.dir/src/PackageData.c.obj"
 	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/PackageData.c.obj -MF CMakeFiles\main.dir\src\PackageData.c.obj.d -o CMakeFiles\main.dir\src\PackageData.c.obj -c "D:\OI\Project\C course design\PostStation\src\PackageData.c"
 
 CMakeFiles/main.dir/src/PackageData.c.i: cmake_force
@@ -101,11 +116,26 @@ CMakeFiles/main.dir/src/PackageData.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/PackageData.c.s"
 	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\OI\Project\C course design\PostStation\src\PackageData.c" -o CMakeFiles\main.dir\src\PackageData.c.s
 
+CMakeFiles/main.dir/src/Trie.c.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/Trie.c.obj: CMakeFiles/main.dir/includes_C.rsp
+CMakeFiles/main.dir/src/Trie.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/Trie.c
+CMakeFiles/main.dir/src/Trie.c.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/main.dir/src/Trie.c.obj"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/Trie.c.obj -MF CMakeFiles\main.dir\src\Trie.c.obj.d -o CMakeFiles\main.dir\src\Trie.c.obj -c "D:\OI\Project\C course design\PostStation\src\Trie.c"
+
+CMakeFiles/main.dir/src/Trie.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/Trie.c.i"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\OI\Project\C course design\PostStation\src\Trie.c" > CMakeFiles\main.dir\src\Trie.c.i
+
+CMakeFiles/main.dir/src/Trie.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/Trie.c.s"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\OI\Project\C course design\PostStation\src\Trie.c" -o CMakeFiles\main.dir\src\Trie.c.s
+
 CMakeFiles/main.dir/src/UserData.c.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/UserData.c.obj: CMakeFiles/main.dir/includes_C.rsp
 CMakeFiles/main.dir/src/UserData.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/UserData.c
 CMakeFiles/main.dir/src/UserData.c.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/main.dir/src/UserData.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/main.dir/src/UserData.c.obj"
 	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/UserData.c.obj -MF CMakeFiles\main.dir\src\UserData.c.obj.d -o CMakeFiles\main.dir\src\UserData.c.obj -c "D:\OI\Project\C course design\PostStation\src\UserData.c"
 
 CMakeFiles/main.dir/src/UserData.c.i: cmake_force
@@ -120,7 +150,7 @@ CMakeFiles/main.dir/src/main.c.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.c.obj: CMakeFiles/main.dir/includes_C.rsp
 CMakeFiles/main.dir/src/main.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/main.c
 CMakeFiles/main.dir/src/main.c.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/main.dir/src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/main.dir/src/main.c.obj"
 	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.c.obj -MF CMakeFiles\main.dir\src\main.c.obj.d -o CMakeFiles\main.dir\src\main.c.obj -c "D:\OI\Project\C course design\PostStation\src\main.c"
 
 CMakeFiles/main.dir/src/main.c.i: cmake_force
@@ -133,27 +163,31 @@ CMakeFiles/main.dir/src/main.c.s: cmake_force
 
 # Object files for target main
 main_OBJECTS = \
+"CMakeFiles/main.dir/src/FileManage.c.obj" \
 "CMakeFiles/main.dir/src/List.c.obj" \
 "CMakeFiles/main.dir/src/PackageData.c.obj" \
+"CMakeFiles/main.dir/src/Trie.c.obj" \
 "CMakeFiles/main.dir/src/UserData.c.obj" \
 "CMakeFiles/main.dir/src/main.c.obj"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-main.exe: CMakeFiles/main.dir/src/List.c.obj
-main.exe: CMakeFiles/main.dir/src/PackageData.c.obj
-main.exe: CMakeFiles/main.dir/src/UserData.c.obj
-main.exe: CMakeFiles/main.dir/src/main.c.obj
-main.exe: CMakeFiles/main.dir/build.make
-main.exe: CMakeFiles/main.dir/linkLibs.rsp
-main.exe: CMakeFiles/main.dir/objects1.rsp
-main.exe: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable main.exe"
+D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/FileManage.c.obj
+D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/List.c.obj
+D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/PackageData.c.obj
+D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/Trie.c.obj
+D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/UserData.c.obj
+D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/main.c.obj
+D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/build.make
+D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/linkLibs.rsp
+D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/objects1.rsp
+D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable \"D:\OI\Project\C course design\PostStation\bin\main.exe\""
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\main.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/main.dir/build: main.exe
+CMakeFiles/main.dir/build: D:/OI/Project/C\ course\ design/PostStation/bin/main.exe
 .PHONY : CMakeFiles/main.dir/build
 
 CMakeFiles/main.dir/clean:

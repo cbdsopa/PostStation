@@ -1,16 +1,16 @@
 #pragma once
 #include <stdlib.h>
 
-typedef struct{
-	TrieNode *child[2];
+struct TrieNode{
+	struct TrieNode *child[2];
 	void *data;
-}TrieNode;
+};
 
-typedef struct{
-	TrieNode *root;
+struct Trie{
+	struct TrieNode *root;
 	int count;
-}Trie;
+};
 
-int Trie_Init(Trie *);
-int Trie_Insert(Trie *, long long, const void *, const size_t);
-void *Trie_Find(Trie *, long long);
+struct Trie Trie_Create();
+int Trie_Insert(struct Trie *, long long, const void *, const size_t);
+void *Trie_Find(struct Trie *, long long);

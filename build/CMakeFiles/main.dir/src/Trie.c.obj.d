@@ -1,7 +1,6 @@
-CMakeFiles/main.dir/src/UserData.c.obj: \
- D:\OI\Project\C\ course\ design\PostStation\src\UserData.c \
- D:/OI/Project/C\ course\ design/PostStation/include/UserData.h \
- D:/OI/Project/C\ course\ design/PostStation/include/List.h \
+CMakeFiles/main.dir/src/Trie.c.obj: \
+ D:\OI\Project\C\ course\ design\PostStation\src\Trie.c \
+ D:/OI/Project/C\ course\ design/PostStation/include/Trie.h \
  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stdlib.h \
  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/corecrt.h \
  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw.h \

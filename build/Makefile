@@ -128,6 +128,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+src/FileManage.obj: src/FileManage.c.obj
+.PHONY : src/FileManage.obj
+
+# target to build an object file
+src/FileManage.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/FileManage.c.obj
+.PHONY : src/FileManage.c.obj
+
+src/FileManage.i: src/FileManage.c.i
+.PHONY : src/FileManage.i
+
+# target to preprocess a source file
+src/FileManage.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/FileManage.c.i
+.PHONY : src/FileManage.c.i
+
+src/FileManage.s: src/FileManage.c.s
+.PHONY : src/FileManage.s
+
+# target to generate assembly for a file
+src/FileManage.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/FileManage.c.s
+.PHONY : src/FileManage.c.s
+
 src/List.obj: src/List.c.obj
 .PHONY : src/List.obj
 
@@ -175,6 +199,30 @@ src/PackageData.s: src/PackageData.c.s
 src/PackageData.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/PackageData.c.s
 .PHONY : src/PackageData.c.s
+
+src/Trie.obj: src/Trie.c.obj
+.PHONY : src/Trie.obj
+
+# target to build an object file
+src/Trie.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Trie.c.obj
+.PHONY : src/Trie.c.obj
+
+src/Trie.i: src/Trie.c.i
+.PHONY : src/Trie.i
+
+# target to preprocess a source file
+src/Trie.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Trie.c.i
+.PHONY : src/Trie.c.i
+
+src/Trie.s: src/Trie.c.s
+.PHONY : src/Trie.s
+
+# target to generate assembly for a file
+src/Trie.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Trie.c.s
+.PHONY : src/Trie.c.s
 
 src/UserData.obj: src/UserData.c.obj
 .PHONY : src/UserData.obj
@@ -233,12 +281,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... main
+	@echo ... src/FileManage.obj
+	@echo ... src/FileManage.i
+	@echo ... src/FileManage.s
 	@echo ... src/List.obj
 	@echo ... src/List.i
 	@echo ... src/List.s
 	@echo ... src/PackageData.obj
 	@echo ... src/PackageData.i
 	@echo ... src/PackageData.s
+	@echo ... src/Trie.obj
+	@echo ... src/Trie.i
+	@echo ... src/Trie.s
 	@echo ... src/UserData.obj
 	@echo ... src/UserData.i
 	@echo ... src/UserData.s

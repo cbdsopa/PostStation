@@ -30,8 +30,8 @@ typedef struct{
 	// 超过 30 后不再计数
 	int level;
 	// 1 ~ 3 
-	List package;
-	List vehicle;
+	struct List package;
+	struct List vehicle;
 }UserData;
 
 UserData CreateUser(long long, char*, char*, int, int, int);
