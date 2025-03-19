@@ -1,6 +1,6 @@
 #pragma once
 
-struct PackageData{
+typedef struct PackageData{
 	long long PhoneNumber;
 	// 1xx - xxxx - xxx
 	char name[20];
@@ -25,6 +25,6 @@ struct PackageData{
 		4 紧急
 	*/
 
-};
+}PackageData;
 
-struct PackageData CreatePackage(long long, char*, double, double, double, char*, char*, int);
+PackageData CreatePackage(long long, char*, double, double, double, char*, char*, int);

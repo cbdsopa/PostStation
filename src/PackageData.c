@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-struct PackageData CreatePackage(long long PhoneNumber, char *name, double distance, double volume, double weight,
+PackageData CreatePackage(long long PhoneNumber, char *name, double distance, double volume, double weight,
 	char *PlaceFrom, char *PlaceTo, int status){
-	struct PackageData package;
+	PackageData package;
 
 	package.PhoneNumber = PhoneNumber;
 	package.distance = distance;

@@ -2,7 +2,7 @@
 
 #include "List.h"
 
-struct UserData{
+typedef struct UserData{
 	long long PhoneNumber;
 	// 1xx - xxxx - xxx
 	char name[20];
@@ -30,8 +30,8 @@ struct UserData{
 	// 超过 30 后不再计数
 	int level;
 	// 1 ~ 3 
-	struct List package;
-	struct List vehicle;
-};
+	List package;
+	List vehicle;
+}UserData;
 
-struct UserData CreateUser(long long, char*, char*, int, int, int);
+UserData CreateUser(long long, char*, char*, int, int, int);

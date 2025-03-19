@@ -3,8 +3,8 @@
 #include <string.h>
 #include "List.h"
 
-struct UserData CreateUser(long long PhoneNumber, char *name, char *password, int UserStatus, int TransStatus, int TransSize){
-	struct UserData user;
+UserData CreateUser(long long PhoneNumber, char *name, char *password, int UserStatus, int TransStatus, int TransSize){
+	UserData user;
 
 	strcpy(user.name, name);
 	strcpy(user.password, password);

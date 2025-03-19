@@ -2,17 +2,17 @@
 #include <stdlib.h>
 #include <string.h>
 
-struct List List_Create(){
-	struct List list;
+List List_Create(){
+	List list;
 	list.head = NULL;
 	list.count = 0;
 	return list;
 }
 
-int List_Insert(struct List *list, const void *data, const size_t siz){
+int List_Insert(List *list, const void *data, const size_t siz){
 	if(list == NULL) return -1;
 	if(data == NULL) return -2;
-	struct ListNode *newnode = (struct ListNode *)malloc(sizeof(struct ListNode) );
+	ListNode *newnode = (ListNode *)malloc(sizeof(ListNode) );
 	newnode->data = (void *)malloc(siz);
 	memcpy(newnode->data, data, siz);
 	if(list->head == NULL){
@@ -26,10 +26,10 @@ int List_Insert(struct List *list, const void *data, const size_t siz){
 	return 0;
 }
 
-int List_Delete(struct List *list, const void *data, const size_t siz){
+int List_Delete(List *list, const void *data, const size_t siz){
 	if(list == NULL) return -1;
 	if(data == NULL) return -2;
-	struct ListNode *now = list->head, *last = NULL;
+	ListNode *now = list->head, *last = NULL;
 	while(now != NULL){
 		if(memcmp(now->data, data, siz) == 0){
 			if(last == NULL){
@@ -50,10 +50,10 @@ int List_Delete(struct List *list, const void *data, const size_t siz){
 	return 0;
 }
 
-int List_Find(struct List *list, const void *data, const size_t siz){
+int List_Find(List *list, const void *data, const size_t siz){
 	if(list == NULL) return -1;
 	if(data == NULL) return -2;
-	struct ListNode *now = list->head;
+	ListNode *now = list->head;
 	while(now != NULL){
 		if(memcmp(now->data, data, siz) == 0){
 			return 1;
@@ -63,10 +63,10 @@ int List_Find(struct List *list, const void *data, const size_t siz){
 	return 0;
 }
 
-int List_DeleteTheEarliest(struct List *list){
+int List_DeleteTheEarliest(List *list){
 	if(list == NULL) return -1;
 	if(list->count < 1) return 0;
-	struct ListNode *now = list->head;
+	ListNode *now = list->head;
 	while(now->next != NULL){
 		now = now->next;
 	}
@@ -75,19 +75,19 @@ int List_DeleteTheEarliest(struct List *list){
 	return 1;
 }
 
-int List_DeleteTheLatest(struct List *list){
+int List_DeleteTheLatest(List *list){
 	if(list == NULL) return -1;
 	if(list->count < 1) return 0;
-	struct ListNode *temp = list->head;
+	ListNode *temp = list->head;
 	free(temp);
 	list->head = list->head->next;
 	return 1;
 }
 
-void *List_ShowTheEarliest(struct List *list, int index){
+void *List_ShowTheEarliest(List *list, int index){
 	if(list == NULL) return NULL;
 	if(list->count < index || index < 1) return NULL;
-	struct ListNode *now = list->head;
+	ListNode *now = list->head;
 	int count = 0;
 	while(now != NULL){
 		if(list->count - count == index){
@@ -99,10 +99,10 @@ void *List_ShowTheEarliest(struct List *list, int index){
 	return NULL;
 }
 
-void *List_ShowTheLatest(struct List *list, int index){
+void *List_ShowTheLatest(List *list, int index){
 	if(list == NULL) return NULL;
 	if(list->count < index || index < 1) return NULL;
-	struct ListNode *now = list->head;
+	ListNode *now = list->head;
 	int count = 0;
 	while(now != NULL){
 		++count;
