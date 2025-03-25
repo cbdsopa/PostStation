@@ -302,6 +302,7 @@ CMakeFiles/main.dir/src/main.c.obj: D:/OI/Project/C\ course\ design/PostStation/
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/pshpack2.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/pshpack4.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/pshpack8.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/realtimeapiset.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/reason.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/rpc.h \
@@ -320,6 +321,7 @@ CMakeFiles/main.dir/src/main.c.obj: D:/OI/Project/C\ course\ design/PostStation/
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/stralign_s.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/securityappcontainer.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/securitybaseapi.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/servprov.h \
@@ -334,10 +336,12 @@ CMakeFiles/main.dir/src/main.c.obj: D:/OI/Project/C\ course\ design/PostStation/
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stringapiset.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/synchapi.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sysinfoapi.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/systemtopologyapi.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/threadpoolapiset.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/threadpoollegacyapiset.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/time.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/timeapi.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/timezoneapi.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/tvout.h \
@@ -874,6 +878,8 @@ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/pshpack4.h:
 
 D:/OI/Document/mingw64/x86_64-w64-mingw32/include/pshpack8.h:
 
+D:/OI/Document/mingw64/x86_64-w64-mingw32/include/pthread_time.h:
+
 D:/OI/Document/mingw64/x86_64-w64-mingw32/include/realtimeapiset.h:
 
 D:/OI/Document/mingw64/x86_64-w64-mingw32/include/reason.h:
@@ -890,11 +896,17 @@ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/rpcnterr.h:
 
 D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sdkddkver.h:
 
+D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
+
 D:/OI/Document/mingw64/x86_64-w64-mingw32/include/specstrings.h:
 
 D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stddef.h:
 
+D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sys/timeb.h:
+
 D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sysinfoapi.h:
+
+D:/OI/Document/mingw64/x86_64-w64-mingw32/include/time.h:
 
 D:/OI/Document/mingw64/x86_64-w64-mingw32/include/timezoneapi.h:
 

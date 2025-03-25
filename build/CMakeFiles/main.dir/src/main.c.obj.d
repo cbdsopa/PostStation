@@ -276,4 +276,11 @@ CMakeFiles/main.dir/src/main.c.obj: \
  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/winsvc.h \
  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/mcx.h \
  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/imm.h \
- D:/OI/Project/C\ course\ design/PostStation/include/FileManage.h
+ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/time.h \
+ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/FileManage.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/UserData.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/List.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/Trie.h
