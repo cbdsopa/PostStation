@@ -377,7 +377,10 @@ CMakeFiles/main.dir/src/main.c.obj: D:/OI/Project/C\ course\ design/PostStation/
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/wow64apiset.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/wtypes.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/wtypesbase.h \
-  D:/OI/Project/C\ course\ design/PostStation/include/FileManage.h
+  D:/OI/Project/C\ course\ design/PostStation/include/FileManage.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/List.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/Trie.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/UserData.h
 
 
 D:/OI/Document/mingw64/x86_64-w64-mingw32/include/ctype.h:

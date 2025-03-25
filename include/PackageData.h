@@ -24,6 +24,7 @@ typedef struct PackageData{
 		2 需要保鲜
 		4 紧急
 	*/
+	int posID;
 	char PackageCode[21];
 	// 19 个字符，由英文大小写字符和数字组成
 }PackageData;

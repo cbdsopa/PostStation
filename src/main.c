@@ -9,6 +9,8 @@
 
 int InputType;
 FILE *STDIN, *STDOUT;
+Trie UserManager;
+List ManagerAvailable, WarePackage, WarePostion;
 
 int main(int argc, char **argv){
 	system("chcp 65001 & cls");
@@ -27,16 +29,20 @@ int main(int argc, char **argv){
 
 	srand(time(0) + clock() );
 	
-	Trie UserManager = Trie_Create();
+	UserManager = Trie_Create();
 	// 加载用户信息
 
 
-	List ManagerAvailable = List_Create();
+	ManagerAvailable = List_Create();
 	// 加载管理员信息
 
-	List WareHouse = List_Create();
-	// 加载仓库信息
 
+	WarePackage = List_Create();
+	// 加载仓库货物信息
+
+
+	WarePostion = List_Create();
+	// 加载仓库货架信息
 
 
 	/* 用户操作 */

@@ -19,5 +19,6 @@ UserData CreateUser(long long PhoneNumber, char *name, char *password, int UserS
 
 	user.package = List_Create();
 	user.vehicle = List_Create();
+	user.message = List_Create();
 	return user;
 }
