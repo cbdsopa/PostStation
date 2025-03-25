@@ -1,13 +1,21 @@
 #include "WareInOut.h"
 #include "WarePositionData.h"
 #include "Trie.h"
+#include "FileManage.h"
 #include "UserData.h"
 
 const double eps = 1e-9;
 
 PackageData WareIn(List *Manager, PackageData package, List *WarePosition, List *WarePackage){
+	if(!InputType) system("cls");
 	int index = rand() * rand() % Manager->count + 1;
 	UserData *manager = (UserData *)List_ShowTheEarliest(Manager, index);
+	
+	fprintf(STDOUT, "管理员 %s 已受理。\n", manager->name);
+	FILE* managerfile = UserOutput(manager->PhoneNumber);
+	fprintf(managerfile, "受理出库信息。\n");
+	fclose(managerfile);
+	
 	/* 寻找空的货架 */
 	for(ListNode *now = WarePosition->head; now != NULL; now = now->next){
 		WarePostionData *WarePos = (WarePostionData *)now->data;
@@ -80,3 +88,4 @@ PackageData WareIn(List *Manager, PackageData package, List *WarePosition, List 
 	List_Delete(WarePackage, package_delete, sizeof(PackageData) );
 	return package;
 }
+

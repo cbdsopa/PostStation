@@ -92,23 +92,46 @@ int UserVehicleInfoClear(long long PhoneNumber){
 	return 0;
 }
 
-FILE *WarehouseInfoSave(){
-	char path[27];
-	sprintf(path, "../data/warehouse/data.txt");
+FILE *WarePostionSave(){
+	char path[36];
+	sprintf(path, "../data/warehouse/position_data.txt");
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
-		fprintf(stderr, "Error: file warehouse data open failed.\n");
+		fprintf(stderr, "Error: file warehousePostion data open failed.\n");
 		return NULL;
 	}
 	return file;
 }
 
-int WarehouseInfoClear(){
-	char path[27];
-	sprintf(path, "../data/warehouse/data.txt");
+int WarePositionClear(){
+	char path[36];
+	sprintf(path, "../data/warehouse/position_data.txt");
 	FILE *file = fopen(path, "w");
 	if(file == NULL){
-		fprintf(stderr, "Error: file warehouse data open failed.\n");
+		fprintf(stderr, "Error: file warehousePostion data open failed.\n");
+		return -1;
+	}
+	fclose(file);
+	return 0;
+}
+
+FILE *WarePackageSave(){
+	char path[35];
+	sprintf(path, "../data/warehouse/package_data.txt");
+	FILE *file = fopen(path, "a");
+	if(file == NULL){
+		fprintf(stderr, "Error: file warehousePackage data open failed.\n");
+		return NULL;
+	}
+	return file;
+}
+
+int WarePositionClear(){
+	char path[35];
+	sprintf(path, "../data/warehouse/package_data.txt");
+	FILE *file = fopen(path, "w");
+	if(file == NULL){
+		fprintf(stderr, "Error: file warehousePackage data open failed.\n");
 		return -1;
 	}
 	fclose(file);

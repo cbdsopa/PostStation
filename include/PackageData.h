@@ -3,7 +3,7 @@
 typedef struct PackageData{
 	long long PhoneNumber;
 	// 1xx - xxxx - xxx
-	char name[21];
+	char name[31];
 	// 1 - 10 个字符
 	double distance;
 	// (0, 10000] km
@@ -16,7 +16,7 @@ typedef struct PackageData{
 	*/
 	double weight;
 	// (0, 200] kg ，大于 100 kg 算超重
-	char PlaceFrom[41], PlaceTo[41];
+	char PlaceFrom[61], PlaceTo[61];
 	// 1 - 20 个字符
 	int status;
 	/*
@@ -26,7 +26,7 @@ typedef struct PackageData{
 	*/
 	int posID;
 	char PackageCode[21];
-	// 19 个字符，由英文大小写字符和数字组成
+	// 20 个字符，由英文大小写字符和数字组成
 }PackageData;
 
 PackageData CreatePackage(long long, char*, double, double, double, char*, char*, int);

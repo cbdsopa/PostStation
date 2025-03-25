@@ -5,7 +5,7 @@
 typedef struct UserData{
 	long long PhoneNumber;
 	// 1xx - xxxx - xxx
-	char name[21];
+	char name[31];
 	// 1 ~ 10 个字符
 	char password[21];
 	// 1 ~ 20 个英文字符
