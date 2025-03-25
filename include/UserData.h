@@ -5,10 +5,10 @@
 typedef struct UserData{
 	long long PhoneNumber;
 	// 1xx - xxxx - xxx
-	char name[20];
-	// 1 ~ 20 个字符
-	char password[20];
-	// 1 ~ 20 个字符
+	char name[21];
+	// 1 ~ 10 个字符
+	char password[21];
+	// 1 ~ 20 个英文字符
 	int UserStatus;
 	/*
 		1 学生

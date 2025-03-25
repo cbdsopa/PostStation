@@ -16,6 +16,18 @@ PackageData CreatePackage(long long PhoneNumber, char *name, double distance, do
 	strcpy(package.PlaceFrom, PlaceFrom);
 	strcpy(package.PlaceTo, PlaceTo);
 	
-	
+	for(int i = 0; i < 19; ++i){
+		int num = rand();
+		num %= 62;
+		if(num < 10){
+			package.PackageCode[i] = '0' + num;
+		}else{
+			num -= 10;
+			if(num < 26) 
+				package.PackageCode[i] = 'a' + num;
+			else 
+				package.PackageCode[i] = 'A' + num - 26;
+		}
+	}
 	return package;
 }
