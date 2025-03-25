@@ -24,7 +24,8 @@ typedef struct PackageData{
 		2 需要保鲜
 		4 紧急
 	*/
-
+	char PackageCode[20];
+	// 1 - 19 个字符
 }PackageData;
 
 PackageData CreatePackage(long long, char*, double, double, double, char*, char*, int);

@@ -32,6 +32,7 @@ typedef struct UserData{
 	// 1 ~ 3 
 	List package;
 	List vehicle;
+	List message;
 }UserData;
 
 UserData CreateUser(long long, char*, char*, int, int, int);

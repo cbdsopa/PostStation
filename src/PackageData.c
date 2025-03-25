@@ -15,5 +15,7 @@ PackageData CreatePackage(long long PhoneNumber, char *name, double distance, do
 	strcpy(package.name, name);
 	strcpy(package.PlaceFrom, PlaceFrom);
 	strcpy(package.PlaceTo, PlaceTo);
+	
+	
 	return package;
 }
