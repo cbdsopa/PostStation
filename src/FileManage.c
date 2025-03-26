@@ -52,7 +52,7 @@ FILE *UserPackageInfoSave(long long PhoneNumber){
 	sprintf(path, "../data/user/%lld/package.txt", PhoneNumber);
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
-		fprintf(stderr, "Error: file %lld's data open failed.\n", PhoneNumber);
+		fprintf(stderr, "Error: file %lld's package open failed.\n", PhoneNumber);
 		return NULL;
 	}
 	return file;
@@ -74,7 +74,7 @@ FILE *UserVehicleInfoSave(long long PhoneNumber){
 	sprintf(path, "../data/user/%lld/vehicle.txt", PhoneNumber);
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
-		fprintf(stderr, "Error: file %lld's data open failed.\n", PhoneNumber);
+		fprintf(stderr, "Error: file %lld's vehicle open failed.\n", PhoneNumber);
 		return NULL;
 	}
 	return file;
@@ -86,6 +86,28 @@ int UserVehicleInfoClear(long long PhoneNumber){
 	FILE *file = fopen(path, "w");
 	if(file == NULL){
 		fprintf(stderr, "Error: file %lld's vehicle open failed.\n", PhoneNumber);
+		return -1;
+	}
+	fclose(file);
+	return 0;
+}
+
+FILE *UserMessageInfoSave(long long PhoneNumber){
+	char path[36];
+	sprintf(path, "../data/user/%lld/message.txt", PhoneNumber);
+	FILE *file = fopen(path, "a");
+	if(file == NULL){
+		fprintf(stderr, "Error: file %lld's message open failed.\n", PhoneNumber);
+		return NULL;
+	}
+	return file;
+}
+int UserMessageInfoClear(long long PhoneNumber){
+	char path[36];
+	sprintf(path, "../data/user/%lld/message.txt", PhoneNumber);
+	FILE *file = fopen(path, "w");
+	if(file == NULL){
+		fprintf(stderr, "Error: file %lld's message open failed.\n", PhoneNumber);
 		return -1;
 	}
 	fclose(file);
@@ -126,7 +148,7 @@ FILE *WarePackageSave(){
 	return file;
 }
 
-int WarePositionClear(){
+int WarePackageClear(){
 	char path[35];
 	sprintf(path, "../data/warehouse/package_data.txt");
 	FILE *file = fopen(path, "w");

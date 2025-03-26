@@ -25,8 +25,8 @@ typedef struct PackageData{
 		4 紧急
 	*/
 	int posID;
-	char PackageCode[21];
-	// 20 个字符，由英文大小写字符和数字组成
+	char PackageCode[9];
+	// 8 个字符，由英文大小写字符和数字组成
 }PackageData;
 
 PackageData CreatePackage(long long, char*, double, double, double, char*, char*, int);

@@ -18,7 +18,7 @@ PackageData CreatePackage(long long PhoneNumber, char *name, double distance, do
 	
 	package.posID = 0;
 
-	for(int i = 0; i < 19; ++i){
+	for(int i = 0; i < 8; ++i){
 		int num = rand();
 		num %= 62;
 		if(num < 10){
@@ -31,5 +31,6 @@ PackageData CreatePackage(long long PhoneNumber, char *name, double distance, do
 				package.PackageCode[i] = 'A' + num - 26;
 		}
 	}
+	package.PackageCode[8] = '\0';
 	return package;
 }

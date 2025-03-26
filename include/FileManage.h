@@ -13,8 +13,9 @@ FILE *UserPackageInfoSave(long long);
 int UserPackageInfoClear(long long);
 FILE *UserVehicleInfoSave(long long);
 int UserVehicleInfoClear(long long);
+FILE *UserMessageInfoSave(long long);
+int UserMessageInfoClear(long long);
 FILE *WarePostionSave();
 int WarePositionClear();
 FILE *WarePackageSave();
-int WarePositionClear();
-
+int WarePackageClear();

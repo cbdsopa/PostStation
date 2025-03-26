@@ -23,27 +23,27 @@ PackageData WareIn(List *Manager, PackageData package, List *WarePosition, List 
 		if(package.status & 1){
 			if(WarePos->SizeType == 3){
 				WarePos->empty = 0;
-				WarePos->package = package;
 				package.posID = WarePos->ID;
+				WarePos->package = package;
 				return package;
 			}
 		}else{
 			if(WarePos->SizeType == 0 && package.volume - 36000 <= eps){
 				WarePos->empty = 0;
-				WarePos->package = package;
 				package.posID = WarePos->ID;
+				WarePos->package = package;
 				return package;
 			}
 			if(WarePos->SizeType == 1 && package.volume - 36000 > eps && package.volume - 60000 <= eps){
 				WarePos->empty = 0;
-				WarePos->package = package;
 				package.posID = WarePos->ID;
+				WarePos->package = package;
 				return package;
 			}
 			if(WarePos->SizeType == 2 && package.volume - 60000 > eps){
 				WarePos->empty = 0;
-				WarePos->package = package;
 				package.posID = WarePos->ID;
+				WarePos->package = package;
 				return package;
 			}
 		}
@@ -74,9 +74,10 @@ PackageData WareIn(List *Manager, PackageData package, List *WarePosition, List 
 	/* 替换被删除包裹 */
 	for(ListNode *now = WarePosition->head; now != NULL; now = now->next){
 		WarePostionData *WarePos = (WarePostionData *)now->data;
-		if(memcpy(WarePos->package, *package_delete, sizeof(PackageData) ) == 0){
-			WarePos->package = package;
+		if(memcmp(WarePos->package, *package_delete, sizeof(PackageData) ) == 0){
 			package.posID = WarePos->ID;
+			WarePos->package = package;
+			break;
 		}
 	}
 	/* 删除被删除包裹的信息 */
@@ -89,3 +90,23 @@ PackageData WareIn(List *Manager, PackageData package, List *WarePosition, List 
 	return package;
 }
 
+int WareOut(List *Manager, PackageData package, List *WarePosition, List *WarePackage){
+	if(!InputType) system("cls");
+	int index = rand() * rand() % Manager->count + 1;
+	UserData *manager = (UserData *)List_ShowTheEarliest(Manager, index);
+	
+	fprintf(STDOUT, "管理员 %s 已受理。\n", manager->name);
+	FILE* managerfile = UserOutput(manager->PhoneNumber);
+	fprintf(managerfile, "受理出库信息。\n");
+	fclose(managerfile);
+
+	/* 找到包裹并删除 */
+	for(ListNode *now = WarePosition->head; now != NULL; now = now->next){
+		WarePostionData *WarePos = (WarePostionData *)now->data;
+		if(memcmp(WarePos->package, package, sizeof(PackageData) ) == 0){
+			WarePos->empty = 1;
+		}
+	}
+	List_Delete(WarePackage, &package, sizeof(PackageData) );
+	return 0;
+}

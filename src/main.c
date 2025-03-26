@@ -6,6 +6,7 @@
 #include "UserData.h"
 #include "Trie.h"
 #include "List.h"
+#include "user.h"
 
 int InputType;
 FILE *STDIN, *STDOUT;
@@ -17,7 +18,11 @@ int main(int argc, char **argv){
 	// 使终端支持 UTF-8
 	system("cls");
 	printf("请输入读入方式 (0 键盘 / 1 文件)\n");
-	scanf("%d", &InputType);
+	scanf("%1d", &InputType);
+	while(InputType != 0 && InputType != 1){
+		printf("输入有误，请重新输入读入方式 (0 键盘 / 1 文件)\n");
+		scanf("%1d", &InputType);
+	}
 	STDIN = InputType ? fopen("../data/system/input.txt", "r") : stdin; 
 	STDOUT = InputType ? fopen("../data/system/log.txt", "w") : stdout;
 	if(InputType){
@@ -50,21 +55,21 @@ int main(int argc, char **argv){
 		/* 登录和注册 */
 		if(!InputType) system("cls");
 		fprintf(STDOUT, "您好！想要退出(0)？登录(1)？注册(2)?\n");
-		int Oper; fscanf(STDIN, "%d", &Oper);
+		int Oper; fscanf(STDIN, "%1d", &Oper);
 		while(Oper != 0 && Oper != 1 && Oper != 2){
 			fprintf(STDOUT, "输入不合法，请再次输入\n想要退出(0)？登录(1)？注册(2)?\n");
 			fscanf(STDIN, "%d", &Oper);
 		}
-		if(Oper == '0') break;
-		UserData user;
+		if(Oper == 0) break;
+		UserData *user;
+		if(Oper == 1) user = user_login();
+		if(Oper == 2) user = user_register();
 
-
-
-		FILE* userfile = UserOutput(user.PhoneNumber);
+		FILE* userfile = UserOutput(user->PhoneNumber);
 		
 		if(!InputType) system("cls");
-		fprintf(STDOUT, "欢迎回来！%s！\n", user.name);
-		fprintf(userfile, "欢迎回来！%s！\n", user.name);
+		fprintf(STDOUT, "欢迎回来！%s\n", user->name);
+		fprintf(userfile, "欢迎回来！%s\n", user->name);
 		Sleep(1000);
 
 		/* 具体操作 */
@@ -76,7 +81,7 @@ int main(int argc, char **argv){
 
 		}
 		
-
+		fclose(userfile);
 	}
 
 	/* 保存数据 */

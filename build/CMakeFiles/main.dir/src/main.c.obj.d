@@ -283,4 +283,5 @@ CMakeFiles/main.dir/src/main.c.obj: \
  D:/OI/Project/C\ course\ design/PostStation/include/FileManage.h \
  D:/OI/Project/C\ course\ design/PostStation/include/UserData.h \
  D:/OI/Project/C\ course\ design/PostStation/include/List.h \
- D:/OI/Project/C\ course\ design/PostStation/include/Trie.h
+ D:/OI/Project/C\ course\ design/PostStation/include/Trie.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/user.h
