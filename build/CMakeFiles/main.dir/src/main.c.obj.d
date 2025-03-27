@@ -280,8 +280,13 @@ CMakeFiles/main.dir/src/main.c.obj: \
  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/locale.h \
  D:/OI/Project/C\ course\ design/PostStation/include/FileManage.h \
  D:/OI/Project/C\ course\ design/PostStation/include/UserData.h \
  D:/OI/Project/C\ course\ design/PostStation/include/List.h \
  D:/OI/Project/C\ course\ design/PostStation/include/Trie.h \
- D:/OI/Project/C\ course\ design/PostStation/include/user.h
+ D:/OI/Project/C\ course\ design/PostStation/include/user.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/cost.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/PackageData.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/WareInOut.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/WarePositionData.h

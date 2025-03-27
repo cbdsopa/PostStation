@@ -176,6 +176,30 @@ src/List.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/List.c.s
 .PHONY : src/List.c.s
 
+src/MyString.obj: src/MyString.c.obj
+.PHONY : src/MyString.obj
+
+# target to build an object file
+src/MyString.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/MyString.c.obj
+.PHONY : src/MyString.c.obj
+
+src/MyString.i: src/MyString.c.i
+.PHONY : src/MyString.i
+
+# target to preprocess a source file
+src/MyString.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/MyString.c.i
+.PHONY : src/MyString.c.i
+
+src/MyString.s: src/MyString.c.s
+.PHONY : src/MyString.s
+
+# target to generate assembly for a file
+src/MyString.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/MyString.c.s
+.PHONY : src/MyString.c.s
+
 src/PackageData.obj: src/PackageData.c.obj
 .PHONY : src/PackageData.obj
 
@@ -248,6 +272,78 @@ src/UserData.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/UserData.c.s
 .PHONY : src/UserData.c.s
 
+src/WareInOut.obj: src/WareInOut.c.obj
+.PHONY : src/WareInOut.obj
+
+# target to build an object file
+src/WareInOut.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/WareInOut.c.obj
+.PHONY : src/WareInOut.c.obj
+
+src/WareInOut.i: src/WareInOut.c.i
+.PHONY : src/WareInOut.i
+
+# target to preprocess a source file
+src/WareInOut.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/WareInOut.c.i
+.PHONY : src/WareInOut.c.i
+
+src/WareInOut.s: src/WareInOut.c.s
+.PHONY : src/WareInOut.s
+
+# target to generate assembly for a file
+src/WareInOut.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/WareInOut.c.s
+.PHONY : src/WareInOut.c.s
+
+src/WarePositionData.obj: src/WarePositionData.c.obj
+.PHONY : src/WarePositionData.obj
+
+# target to build an object file
+src/WarePositionData.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/WarePositionData.c.obj
+.PHONY : src/WarePositionData.c.obj
+
+src/WarePositionData.i: src/WarePositionData.c.i
+.PHONY : src/WarePositionData.i
+
+# target to preprocess a source file
+src/WarePositionData.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/WarePositionData.c.i
+.PHONY : src/WarePositionData.c.i
+
+src/WarePositionData.s: src/WarePositionData.c.s
+.PHONY : src/WarePositionData.s
+
+# target to generate assembly for a file
+src/WarePositionData.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/WarePositionData.c.s
+.PHONY : src/WarePositionData.c.s
+
+src/cost.obj: src/cost.c.obj
+.PHONY : src/cost.obj
+
+# target to build an object file
+src/cost.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/cost.c.obj
+.PHONY : src/cost.c.obj
+
+src/cost.i: src/cost.c.i
+.PHONY : src/cost.i
+
+# target to preprocess a source file
+src/cost.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/cost.c.i
+.PHONY : src/cost.c.i
+
+src/cost.s: src/cost.c.s
+.PHONY : src/cost.s
+
+# target to generate assembly for a file
+src/cost.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/cost.c.s
+.PHONY : src/cost.c.s
+
 src/main.obj: src/main.c.obj
 .PHONY : src/main.obj
 
@@ -272,6 +368,30 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/user.obj: src/user.c.obj
+.PHONY : src/user.obj
+
+# target to build an object file
+src/user.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/user.c.obj
+.PHONY : src/user.c.obj
+
+src/user.i: src/user.c.i
+.PHONY : src/user.i
+
+# target to preprocess a source file
+src/user.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/user.c.i
+.PHONY : src/user.c.i
+
+src/user.s: src/user.c.s
+.PHONY : src/user.s
+
+# target to generate assembly for a file
+src/user.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/user.c.s
+.PHONY : src/user.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -287,6 +407,9 @@ help:
 	@echo ... src/List.obj
 	@echo ... src/List.i
 	@echo ... src/List.s
+	@echo ... src/MyString.obj
+	@echo ... src/MyString.i
+	@echo ... src/MyString.s
 	@echo ... src/PackageData.obj
 	@echo ... src/PackageData.i
 	@echo ... src/PackageData.s
@@ -296,9 +419,21 @@ help:
 	@echo ... src/UserData.obj
 	@echo ... src/UserData.i
 	@echo ... src/UserData.s
+	@echo ... src/WareInOut.obj
+	@echo ... src/WareInOut.i
+	@echo ... src/WareInOut.s
+	@echo ... src/WarePositionData.obj
+	@echo ... src/WarePositionData.i
+	@echo ... src/WarePositionData.s
+	@echo ... src/cost.obj
+	@echo ... src/cost.i
+	@echo ... src/cost.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/user.obj
+	@echo ... src/user.i
+	@echo ... src/user.s
 .PHONY : help
 
 
