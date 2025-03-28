@@ -3,6 +3,7 @@
 #include "Trie.h"
 #include "FileManage.h"
 #include "UserData.h"
+#include "string.h"
 
 const double eps = 1e-9;
 
@@ -74,7 +75,7 @@ PackageData WareIn(List *Manager, PackageData package, List *WarePosition, List 
 	/* 替换被删除包裹 */
 	for(ListNode *now = WarePosition->head; now != NULL; now = now->next){
 		WarePostionData *WarePos = (WarePostionData *)now->data;
-		if(memcmp(WarePos->package, *package_delete, sizeof(PackageData) ) == 0){
+		if(memcmp(&WarePos->package, package_delete, sizeof(PackageData) ) == 0){
 			package.posID = WarePos->ID;
 			WarePos->package = package;
 			break;
@@ -103,7 +104,7 @@ int WareOut(List *Manager, PackageData package, List *WarePosition, List *WarePa
 	/* 找到包裹并删除 */
 	for(ListNode *now = WarePosition->head; now != NULL; now = now->next){
 		WarePostionData *WarePos = (WarePostionData *)now->data;
-		if(memcmp(WarePos->package, package, sizeof(PackageData) ) == 0){
+		if(memcmp(&WarePos->package, &package, sizeof(PackageData) ) == 0){
 			WarePos->empty = 1;
 		}
 	}

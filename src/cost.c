@@ -1,5 +1,7 @@
 #include"cost.h"
 #include<stdio.h>
+#include<math.h>
+
 double expense(UserData user,PackageData pack)
 {
 	double base = 0, extra = 0, discount = 1, vip = 1, grade = 1, total = 0, Total;

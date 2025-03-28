@@ -27,5 +27,7 @@ void *List_ShowTheEarliest(List *, int);
 // 输入位置索引 i，返回最早的第 i 位的数据指针，强制转换为对应类型后使用
 void *List_ShowTheLatest(List *, int);
 // 输入位置索引 i，返回最晚的第 i 位的数据指针，强制转换为对应类型后使用
+void List_Destroy(List *);
 
-extern List ManagerAvailable, WarePackage, WarePostion;
+
+extern List ManagerAvailable, WarePackage, WarePosition;

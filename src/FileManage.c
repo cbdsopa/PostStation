@@ -1,12 +1,13 @@
 #include "FileManage.h"
 #include <stdio.h>
+#include <windows.h>
 
 FILE *UserOutput(long long PhoneNumber){
 	char path[32];
-	sprintf(path, "../data/user/%lld/log.txt", PhoneNumber);
+	sprintf(path, "../data/user/%lld_log.txt", PhoneNumber);
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
-		fprintf(stderr, "Error: file %lld's log open failed.\n", PhoneNumber);
+		fprintf(STDERR, "Error: file %lld's log open failed.\n", PhoneNumber);
 		return NULL;
 	}
 	return file;
@@ -14,10 +15,10 @@ FILE *UserOutput(long long PhoneNumber){
 
 int UserOutClean(long long PhoneNumber){
 	char path[32];
-	sprintf(path, "../data/user/%lld/log.txt", PhoneNumber);
+	sprintf(path, "../data/user/%lld_log.txt", PhoneNumber);
 	FILE *file = fopen(path, "w");
 	if(file == NULL){
-		fprintf(stderr, "Error: file %lld's log open failed.\n", PhoneNumber);
+		fprintf(STDERR, "Error: file %lld's log open failed.\n", PhoneNumber);
 		return -1;
 	}
 	fclose(file);
@@ -26,10 +27,10 @@ int UserOutClean(long long PhoneNumber){
 
 FILE *UserInfoSave(long long PhoneNumber){
 	char path[33];
-	sprintf(path, "../data/user/%lld/data.txt", PhoneNumber);
+	sprintf(path, "../data/user/%lld_data.txt", PhoneNumber);
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
-		fprintf(stderr, "Error: file %lld's data open failed.\n", PhoneNumber);
+		fprintf(STDERR, "Error: file %lld's data open failed.\n", PhoneNumber);
 		return NULL;
 	}
 	return file;
@@ -37,10 +38,10 @@ FILE *UserInfoSave(long long PhoneNumber){
 
 int UserInfoClean(long long PhoneNumber){
 	char path[33];
-	sprintf(path, "../data/user/%lld/data.txt", PhoneNumber);
+	sprintf(path, "../data/user/%lld_data.txt", PhoneNumber);
 	FILE *file = fopen(path, "w");
 	if(file == NULL){
-		fprintf(stderr, "Error: file %lld's data open failed.\n", PhoneNumber);
+		fprintf(STDERR, "Error: file %lld's data open failed.\n", PhoneNumber);
 		return -1;
 	}
 	fclose(file);
@@ -49,20 +50,20 @@ int UserInfoClean(long long PhoneNumber){
 
 FILE *UserPackageInfoSave(long long PhoneNumber){
 	char path[36];
-	sprintf(path, "../data/user/%lld/package.txt", PhoneNumber);
+	sprintf(path, "../data/user/%lld_package.txt", PhoneNumber);
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
-		fprintf(stderr, "Error: file %lld's package open failed.\n", PhoneNumber);
+		fprintf(STDERR, "Error: file %lld's package open failed.\n", PhoneNumber);
 		return NULL;
 	}
 	return file;
 }
 int UserPackageInfoClear(long long PhoneNumber){
 	char path[36];
-	sprintf(path, "../data/user/%lld/package.txt", PhoneNumber);
+	sprintf(path, "../data/user/%lld_package.txt", PhoneNumber);
 	FILE *file = fopen(path, "w");
 	if(file == NULL){
-		fprintf(stderr, "Error: file %lld's package open failed.\n", PhoneNumber);
+		fprintf(STDERR, "Error: file %lld's package open failed.\n", PhoneNumber);
 		return -1;
 	}
 	fclose(file);
@@ -71,10 +72,10 @@ int UserPackageInfoClear(long long PhoneNumber){
 
 FILE *UserVehicleInfoSave(long long PhoneNumber){
 	char path[36];
-	sprintf(path, "../data/user/%lld/vehicle.txt", PhoneNumber);
+	sprintf(path, "../data/user/%lld_vehicle.txt", PhoneNumber);
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
-		fprintf(stderr, "Error: file %lld's vehicle open failed.\n", PhoneNumber);
+		fprintf(STDERR, "Error: file %lld's vehicle open failed.\n", PhoneNumber);
 		return NULL;
 	}
 	return file;
@@ -82,10 +83,10 @@ FILE *UserVehicleInfoSave(long long PhoneNumber){
 
 int UserVehicleInfoClear(long long PhoneNumber){
 	char path[36];
-	sprintf(path, "../data/user/%lld/vehicle.txt", PhoneNumber);
+	sprintf(path, "../data/user/%lld_vehicle.txt", PhoneNumber);
 	FILE *file = fopen(path, "w");
 	if(file == NULL){
-		fprintf(stderr, "Error: file %lld's vehicle open failed.\n", PhoneNumber);
+		fprintf(STDERR, "Error: file %lld's vehicle open failed.\n", PhoneNumber);
 		return -1;
 	}
 	fclose(file);
@@ -94,20 +95,20 @@ int UserVehicleInfoClear(long long PhoneNumber){
 
 FILE *UserMessageInfoSave(long long PhoneNumber){
 	char path[36];
-	sprintf(path, "../data/user/%lld/message.txt", PhoneNumber);
+	sprintf(path, "../data/user/%lld_message.txt", PhoneNumber);
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
-		fprintf(stderr, "Error: file %lld's message open failed.\n", PhoneNumber);
+		fprintf(STDERR, "Error: file %lld's message open failed.\n", PhoneNumber);
 		return NULL;
 	}
 	return file;
 }
 int UserMessageInfoClear(long long PhoneNumber){
 	char path[36];
-	sprintf(path, "../data/user/%lld/message.txt", PhoneNumber);
+	sprintf(path, "../data/user/%lld_message.txt", PhoneNumber);
 	FILE *file = fopen(path, "w");
 	if(file == NULL){
-		fprintf(stderr, "Error: file %lld's message open failed.\n", PhoneNumber);
+		fprintf(STDERR, "Error: file %lld's message open failed.\n", PhoneNumber);
 		return -1;
 	}
 	fclose(file);
@@ -119,7 +120,7 @@ FILE *WarePostionSave(){
 	sprintf(path, "../data/warehouse/position_data.txt");
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
-		fprintf(stderr, "Error: file warehousePostion data open failed.\n");
+		fprintf(STDERR, "Error: file warehousePostion data open failed.\n");
 		return NULL;
 	}
 	return file;
@@ -130,7 +131,7 @@ int WarePositionClear(){
 	sprintf(path, "../data/warehouse/position_data.txt");
 	FILE *file = fopen(path, "w");
 	if(file == NULL){
-		fprintf(stderr, "Error: file warehousePostion data open failed.\n");
+		fprintf(STDERR, "Error: file warehousePostion data open failed.\n");
 		return -1;
 	}
 	fclose(file);
@@ -142,7 +143,7 @@ FILE *WarePackageSave(){
 	sprintf(path, "../data/warehouse/package_data.txt");
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
-		fprintf(stderr, "Error: file warehousePackage data open failed.\n");
+		fprintf(STDERR, "Error: file warehousePackage data open failed.\n");
 		return NULL;
 	}
 	return file;
@@ -153,7 +154,7 @@ int WarePackageClear(){
 	sprintf(path, "../data/warehouse/package_data.txt");
 	FILE *file = fopen(path, "w");
 	if(file == NULL){
-		fprintf(stderr, "Error: file warehousePackage data open failed.\n");
+		fprintf(STDERR, "Error: file warehousePackage data open failed.\n");
 		return -1;
 	}
 	fclose(file);

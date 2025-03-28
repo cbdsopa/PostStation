@@ -6,8 +6,8 @@
 UserData CreateUser(long long PhoneNumber, char *name, char *password, int UserStatus, int TransStatus, int TransSize){
 	UserData user;
 
-	strcpy(user.name, name);
-	strcpy(user.password, password);
+	strncpy(user.name, name, 31);
+	strncpy(user.password, password, 21);
 
 	user.PhoneNumber = PhoneNumber;
 	user.UserStatus = UserStatus;

@@ -1,5 +1,7 @@
 #pragma once
 
+#include <stddef.h>
+
 typedef struct PackageData{
 	long long PhoneNumber;
 	// 1xx - xxxx - xxx

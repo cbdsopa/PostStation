@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 extern int InputType;
-extern FILE *STDIN, *STDOUT;
+extern FILE *STDIN, *STDOUT, *STDERR;
 
 FILE *UserOutput(long long);
 int UserOutClean(long long);

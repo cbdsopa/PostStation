@@ -10,6 +10,11 @@
 		"string_view": "c",
 		"span": "c",
 		"windows.h": "c",
-		"cstdlib": "c"
+		"cstdlib": "c",
+		"user.h": "c",
+		"wareinout.h": "c",
+		"string.h": "c",
+		"stdlib.h": "c",
+		"variant": "c"
 	}
 }

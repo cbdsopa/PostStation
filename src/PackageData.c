@@ -12,9 +12,9 @@ PackageData CreatePackage(long long PhoneNumber, char *name, double distance, do
 	package.weight = weight;
 	package.status = status;
 
-	strcpy(package.name, name);
-	strcpy(package.PlaceFrom, PlaceFrom);
-	strcpy(package.PlaceTo, PlaceTo);
+	strncpy(package.name, name, 31);
+	strncpy(package.PlaceFrom, PlaceFrom, 61);
+	strncpy(package.PlaceTo, PlaceTo, 61);
 	
 	package.posID = 0;
 

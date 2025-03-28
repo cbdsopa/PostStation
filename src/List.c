@@ -114,3 +114,12 @@ void *List_ShowTheLatest(List *list, int index){
 	return NULL;
 }
 
+void List_Destroy(List *list){
+	if(list == NULL) return;
+	ListNode *now = list->head, *temp;
+	while(now){
+		temp = now;
+		free(temp);
+		now = now->next;
+	}
+}
