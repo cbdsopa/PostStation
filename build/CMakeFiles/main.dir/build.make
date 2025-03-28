@@ -116,11 +116,26 @@ CMakeFiles/main.dir/src/MyString.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/MyString.c.s"
 	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\OI\Project\C course design\PostStation\src\MyString.c" -o CMakeFiles\main.dir\src\MyString.c.s
 
+CMakeFiles/main.dir/src/PackOut.c.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/PackOut.c.obj: CMakeFiles/main.dir/includes_C.rsp
+CMakeFiles/main.dir/src/PackOut.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/PackOut.c
+CMakeFiles/main.dir/src/PackOut.c.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/main.dir/src/PackOut.c.obj"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/PackOut.c.obj -MF CMakeFiles\main.dir\src\PackOut.c.obj.d -o CMakeFiles\main.dir\src\PackOut.c.obj -c "D:\OI\Project\C course design\PostStation\src\PackOut.c"
+
+CMakeFiles/main.dir/src/PackOut.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/PackOut.c.i"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\OI\Project\C course design\PostStation\src\PackOut.c" > CMakeFiles\main.dir\src\PackOut.c.i
+
+CMakeFiles/main.dir/src/PackOut.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/PackOut.c.s"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\OI\Project\C course design\PostStation\src\PackOut.c" -o CMakeFiles\main.dir\src\PackOut.c.s
+
 CMakeFiles/main.dir/src/PackageData.c.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/PackageData.c.obj: CMakeFiles/main.dir/includes_C.rsp
 CMakeFiles/main.dir/src/PackageData.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/PackageData.c
 CMakeFiles/main.dir/src/PackageData.c.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/main.dir/src/PackageData.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/main.dir/src/PackageData.c.obj"
 	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/PackageData.c.obj -MF CMakeFiles\main.dir\src\PackageData.c.obj.d -o CMakeFiles\main.dir\src\PackageData.c.obj -c "D:\OI\Project\C course design\PostStation\src\PackageData.c"
 
 CMakeFiles/main.dir/src/PackageData.c.i: cmake_force
@@ -131,11 +146,41 @@ CMakeFiles/main.dir/src/PackageData.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/PackageData.c.s"
 	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\OI\Project\C course design\PostStation\src\PackageData.c" -o CMakeFiles\main.dir\src\PackageData.c.s
 
+CMakeFiles/main.dir/src/StorageRack.c.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/StorageRack.c.obj: CMakeFiles/main.dir/includes_C.rsp
+CMakeFiles/main.dir/src/StorageRack.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/StorageRack.c
+CMakeFiles/main.dir/src/StorageRack.c.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/main.dir/src/StorageRack.c.obj"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/StorageRack.c.obj -MF CMakeFiles\main.dir\src\StorageRack.c.obj.d -o CMakeFiles\main.dir\src\StorageRack.c.obj -c "D:\OI\Project\C course design\PostStation\src\StorageRack.c"
+
+CMakeFiles/main.dir/src/StorageRack.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/StorageRack.c.i"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\OI\Project\C course design\PostStation\src\StorageRack.c" > CMakeFiles\main.dir\src\StorageRack.c.i
+
+CMakeFiles/main.dir/src/StorageRack.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/StorageRack.c.s"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\OI\Project\C course design\PostStation\src\StorageRack.c" -o CMakeFiles\main.dir\src\StorageRack.c.s
+
+CMakeFiles/main.dir/src/Transport.c.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/Transport.c.obj: CMakeFiles/main.dir/includes_C.rsp
+CMakeFiles/main.dir/src/Transport.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/Transport.c
+CMakeFiles/main.dir/src/Transport.c.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/main.dir/src/Transport.c.obj"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/Transport.c.obj -MF CMakeFiles\main.dir\src\Transport.c.obj.d -o CMakeFiles\main.dir\src\Transport.c.obj -c "D:\OI\Project\C course design\PostStation\src\Transport.c"
+
+CMakeFiles/main.dir/src/Transport.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/Transport.c.i"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\OI\Project\C course design\PostStation\src\Transport.c" > CMakeFiles\main.dir\src\Transport.c.i
+
+CMakeFiles/main.dir/src/Transport.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/Transport.c.s"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\OI\Project\C course design\PostStation\src\Transport.c" -o CMakeFiles\main.dir\src\Transport.c.s
+
 CMakeFiles/main.dir/src/Trie.c.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Trie.c.obj: CMakeFiles/main.dir/includes_C.rsp
 CMakeFiles/main.dir/src/Trie.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/Trie.c
 CMakeFiles/main.dir/src/Trie.c.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/main.dir/src/Trie.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/main.dir/src/Trie.c.obj"
 	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/Trie.c.obj -MF CMakeFiles\main.dir\src\Trie.c.obj.d -o CMakeFiles\main.dir\src\Trie.c.obj -c "D:\OI\Project\C course design\PostStation\src\Trie.c"
 
 CMakeFiles/main.dir/src/Trie.c.i: cmake_force
@@ -150,7 +195,7 @@ CMakeFiles/main.dir/src/UserData.c.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/UserData.c.obj: CMakeFiles/main.dir/includes_C.rsp
 CMakeFiles/main.dir/src/UserData.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/UserData.c
 CMakeFiles/main.dir/src/UserData.c.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/main.dir/src/UserData.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/main.dir/src/UserData.c.obj"
 	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/UserData.c.obj -MF CMakeFiles\main.dir\src\UserData.c.obj.d -o CMakeFiles\main.dir\src\UserData.c.obj -c "D:\OI\Project\C course design\PostStation\src\UserData.c"
 
 CMakeFiles/main.dir/src/UserData.c.i: cmake_force
@@ -161,11 +206,41 @@ CMakeFiles/main.dir/src/UserData.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/UserData.c.s"
 	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\OI\Project\C course design\PostStation\src\UserData.c" -o CMakeFiles\main.dir\src\UserData.c.s
 
+CMakeFiles/main.dir/src/UserStatus.c.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/UserStatus.c.obj: CMakeFiles/main.dir/includes_C.rsp
+CMakeFiles/main.dir/src/UserStatus.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/UserStatus.c
+CMakeFiles/main.dir/src/UserStatus.c.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/main.dir/src/UserStatus.c.obj"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/UserStatus.c.obj -MF CMakeFiles\main.dir\src\UserStatus.c.obj.d -o CMakeFiles\main.dir\src\UserStatus.c.obj -c "D:\OI\Project\C course design\PostStation\src\UserStatus.c"
+
+CMakeFiles/main.dir/src/UserStatus.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/UserStatus.c.i"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\OI\Project\C course design\PostStation\src\UserStatus.c" > CMakeFiles\main.dir\src\UserStatus.c.i
+
+CMakeFiles/main.dir/src/UserStatus.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/UserStatus.c.s"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\OI\Project\C course design\PostStation\src\UserStatus.c" -o CMakeFiles\main.dir\src\UserStatus.c.s
+
+CMakeFiles/main.dir/src/VehicleSave.c.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/VehicleSave.c.obj: CMakeFiles/main.dir/includes_C.rsp
+CMakeFiles/main.dir/src/VehicleSave.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/VehicleSave.c
+CMakeFiles/main.dir/src/VehicleSave.c.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/main.dir/src/VehicleSave.c.obj"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/VehicleSave.c.obj -MF CMakeFiles\main.dir\src\VehicleSave.c.obj.d -o CMakeFiles\main.dir\src\VehicleSave.c.obj -c "D:\OI\Project\C course design\PostStation\src\VehicleSave.c"
+
+CMakeFiles/main.dir/src/VehicleSave.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/VehicleSave.c.i"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\OI\Project\C course design\PostStation\src\VehicleSave.c" > CMakeFiles\main.dir\src\VehicleSave.c.i
+
+CMakeFiles/main.dir/src/VehicleSave.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/VehicleSave.c.s"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\OI\Project\C course design\PostStation\src\VehicleSave.c" -o CMakeFiles\main.dir\src\VehicleSave.c.s
+
 CMakeFiles/main.dir/src/WareInOut.c.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/WareInOut.c.obj: CMakeFiles/main.dir/includes_C.rsp
 CMakeFiles/main.dir/src/WareInOut.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/WareInOut.c
 CMakeFiles/main.dir/src/WareInOut.c.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/main.dir/src/WareInOut.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/main.dir/src/WareInOut.c.obj"
 	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/WareInOut.c.obj -MF CMakeFiles\main.dir\src\WareInOut.c.obj.d -o CMakeFiles\main.dir\src\WareInOut.c.obj -c "D:\OI\Project\C course design\PostStation\src\WareInOut.c"
 
 CMakeFiles/main.dir/src/WareInOut.c.i: cmake_force
@@ -180,7 +255,7 @@ CMakeFiles/main.dir/src/WarePositionData.c.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/WarePositionData.c.obj: CMakeFiles/main.dir/includes_C.rsp
 CMakeFiles/main.dir/src/WarePositionData.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/WarePositionData.c
 CMakeFiles/main.dir/src/WarePositionData.c.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/main.dir/src/WarePositionData.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/main.dir/src/WarePositionData.c.obj"
 	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/WarePositionData.c.obj -MF CMakeFiles\main.dir\src\WarePositionData.c.obj.d -o CMakeFiles\main.dir\src\WarePositionData.c.obj -c "D:\OI\Project\C course design\PostStation\src\WarePositionData.c"
 
 CMakeFiles/main.dir/src/WarePositionData.c.i: cmake_force
@@ -195,7 +270,7 @@ CMakeFiles/main.dir/src/cost.c.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/cost.c.obj: CMakeFiles/main.dir/includes_C.rsp
 CMakeFiles/main.dir/src/cost.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/cost.c
 CMakeFiles/main.dir/src/cost.c.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/main.dir/src/cost.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/main.dir/src/cost.c.obj"
 	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/cost.c.obj -MF CMakeFiles\main.dir\src\cost.c.obj.d -o CMakeFiles\main.dir\src\cost.c.obj -c "D:\OI\Project\C course design\PostStation\src\cost.c"
 
 CMakeFiles/main.dir/src/cost.c.i: cmake_force
@@ -210,7 +285,7 @@ CMakeFiles/main.dir/src/main.c.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.c.obj: CMakeFiles/main.dir/includes_C.rsp
 CMakeFiles/main.dir/src/main.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/main.c
 CMakeFiles/main.dir/src/main.c.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/main.dir/src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/main.dir/src/main.c.obj"
 	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.c.obj -MF CMakeFiles\main.dir\src\main.c.obj.d -o CMakeFiles\main.dir\src\main.c.obj -c "D:\OI\Project\C course design\PostStation\src\main.c"
 
 CMakeFiles/main.dir/src/main.c.i: cmake_force
@@ -221,11 +296,26 @@ CMakeFiles/main.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/main.c.s"
 	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\OI\Project\C course design\PostStation\src\main.c" -o CMakeFiles\main.dir\src\main.c.s
 
+CMakeFiles/main.dir/src/restart.c.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/restart.c.obj: CMakeFiles/main.dir/includes_C.rsp
+CMakeFiles/main.dir/src/restart.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/restart.c
+CMakeFiles/main.dir/src/restart.c.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/main.dir/src/restart.c.obj"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/restart.c.obj -MF CMakeFiles\main.dir\src\restart.c.obj.d -o CMakeFiles\main.dir\src\restart.c.obj -c "D:\OI\Project\C course design\PostStation\src\restart.c"
+
+CMakeFiles/main.dir/src/restart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/restart.c.i"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\OI\Project\C course design\PostStation\src\restart.c" > CMakeFiles\main.dir\src\restart.c.i
+
+CMakeFiles/main.dir/src/restart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/restart.c.s"
+	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\OI\Project\C course design\PostStation\src\restart.c" -o CMakeFiles\main.dir\src\restart.c.s
+
 CMakeFiles/main.dir/src/user.c.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/user.c.obj: CMakeFiles/main.dir/includes_C.rsp
 CMakeFiles/main.dir/src/user.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/user.c
 CMakeFiles/main.dir/src/user.c.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/main.dir/src/user.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/main.dir/src/user.c.obj"
 	D:\OI\Document\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/user.c.obj -MF CMakeFiles\main.dir\src\user.c.obj.d -o CMakeFiles\main.dir\src\user.c.obj -c "D:\OI\Project\C course design\PostStation\src\user.c"
 
 CMakeFiles/main.dir/src/user.c.i: cmake_force
@@ -241,13 +331,19 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/src/FileManage.c.obj" \
 "CMakeFiles/main.dir/src/List.c.obj" \
 "CMakeFiles/main.dir/src/MyString.c.obj" \
+"CMakeFiles/main.dir/src/PackOut.c.obj" \
 "CMakeFiles/main.dir/src/PackageData.c.obj" \
+"CMakeFiles/main.dir/src/StorageRack.c.obj" \
+"CMakeFiles/main.dir/src/Transport.c.obj" \
 "CMakeFiles/main.dir/src/Trie.c.obj" \
 "CMakeFiles/main.dir/src/UserData.c.obj" \
+"CMakeFiles/main.dir/src/UserStatus.c.obj" \
+"CMakeFiles/main.dir/src/VehicleSave.c.obj" \
 "CMakeFiles/main.dir/src/WareInOut.c.obj" \
 "CMakeFiles/main.dir/src/WarePositionData.c.obj" \
 "CMakeFiles/main.dir/src/cost.c.obj" \
 "CMakeFiles/main.dir/src/main.c.obj" \
+"CMakeFiles/main.dir/src/restart.c.obj" \
 "CMakeFiles/main.dir/src/user.c.obj"
 
 # External object files for target main
@@ -256,19 +352,25 @@ main_EXTERNAL_OBJECTS =
 D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/FileManage.c.obj
 D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/List.c.obj
 D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/MyString.c.obj
+D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/PackOut.c.obj
 D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/PackageData.c.obj
+D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/StorageRack.c.obj
+D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/Transport.c.obj
 D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/Trie.c.obj
 D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/UserData.c.obj
+D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/UserStatus.c.obj
+D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/VehicleSave.c.obj
 D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/WareInOut.c.obj
 D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/WarePositionData.c.obj
 D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/cost.c.obj
 D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/main.c.obj
+D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/restart.c.obj
 D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/src/user.c.obj
 D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/build.make
 D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/linkLibs.rsp
 D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/objects1.rsp
 D:/OI/Project/C\ course\ design/PostStation/bin/main.exe: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable \"D:\OI\Project\C course design\PostStation\bin\main.exe\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\OI\Project\C course design\PostStation\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Linking C executable \"D:\OI\Project\C course design\PostStation\bin\main.exe\""
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\main.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

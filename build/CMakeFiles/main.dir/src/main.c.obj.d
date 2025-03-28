@@ -289,4 +289,10 @@ CMakeFiles/main.dir/src/main.c.obj: \
  D:/OI/Project/C\ course\ design/PostStation/include/cost.h \
  D:/OI/Project/C\ course\ design/PostStation/include/PackageData.h \
  D:/OI/Project/C\ course\ design/PostStation/include/WareInOut.h \
- D:/OI/Project/C\ course\ design/PostStation/include/WarePositionData.h
+ D:/OI/Project/C\ course\ design/PostStation/include/WarePositionData.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/Transport.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/StorageRack.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/PackOut.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/UserStatus.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/restart.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/VehicleSave.h

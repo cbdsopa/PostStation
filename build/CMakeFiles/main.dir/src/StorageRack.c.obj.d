@@ -1,6 +1,7 @@
-CMakeFiles/main.dir/src/Trie.c.obj: \
- D:\OI\Project\C\ course\ design\PostStation\src\Trie.c \
- D:/OI/Project/C\ course\ design/PostStation/include/Trie.h \
+CMakeFiles/main.dir/src/StorageRack.c.obj: \
+ D:\OI\Project\C\ course\ design\PostStation\src\StorageRack.c \
+ D:/OI/Project/C\ course\ design/PostStation/include/UserData.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/List.h \
  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stdlib.h \
  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/corecrt.h \
  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw.h \
@@ -17,7 +18,14 @@ CMakeFiles/main.dir/src/Trie.c.obj: \
  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/malloc.h \
  D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/errno.h \
- D:/OI/Project/C\ course\ design/PostStation/include/List.h \
- D:/OI/Document/mingw64/x86_64-w64-mingw32/include/string.h \
- D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
- D:/OI/Project/C\ course\ design/PostStation/include/UserData.h
+ D:/OI/Project/C\ course\ design/PostStation/include/FileManage.h \
+ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stdio.h \
+ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/StorageRack.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/WarePositionData.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/PackageData.h \
+ D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stddef.h

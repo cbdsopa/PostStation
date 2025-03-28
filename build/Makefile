@@ -200,6 +200,30 @@ src/MyString.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/MyString.c.s
 .PHONY : src/MyString.c.s
 
+src/PackOut.obj: src/PackOut.c.obj
+.PHONY : src/PackOut.obj
+
+# target to build an object file
+src/PackOut.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/PackOut.c.obj
+.PHONY : src/PackOut.c.obj
+
+src/PackOut.i: src/PackOut.c.i
+.PHONY : src/PackOut.i
+
+# target to preprocess a source file
+src/PackOut.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/PackOut.c.i
+.PHONY : src/PackOut.c.i
+
+src/PackOut.s: src/PackOut.c.s
+.PHONY : src/PackOut.s
+
+# target to generate assembly for a file
+src/PackOut.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/PackOut.c.s
+.PHONY : src/PackOut.c.s
+
 src/PackageData.obj: src/PackageData.c.obj
 .PHONY : src/PackageData.obj
 
@@ -223,6 +247,54 @@ src/PackageData.s: src/PackageData.c.s
 src/PackageData.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/PackageData.c.s
 .PHONY : src/PackageData.c.s
+
+src/StorageRack.obj: src/StorageRack.c.obj
+.PHONY : src/StorageRack.obj
+
+# target to build an object file
+src/StorageRack.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/StorageRack.c.obj
+.PHONY : src/StorageRack.c.obj
+
+src/StorageRack.i: src/StorageRack.c.i
+.PHONY : src/StorageRack.i
+
+# target to preprocess a source file
+src/StorageRack.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/StorageRack.c.i
+.PHONY : src/StorageRack.c.i
+
+src/StorageRack.s: src/StorageRack.c.s
+.PHONY : src/StorageRack.s
+
+# target to generate assembly for a file
+src/StorageRack.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/StorageRack.c.s
+.PHONY : src/StorageRack.c.s
+
+src/Transport.obj: src/Transport.c.obj
+.PHONY : src/Transport.obj
+
+# target to build an object file
+src/Transport.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Transport.c.obj
+.PHONY : src/Transport.c.obj
+
+src/Transport.i: src/Transport.c.i
+.PHONY : src/Transport.i
+
+# target to preprocess a source file
+src/Transport.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Transport.c.i
+.PHONY : src/Transport.c.i
+
+src/Transport.s: src/Transport.c.s
+.PHONY : src/Transport.s
+
+# target to generate assembly for a file
+src/Transport.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Transport.c.s
+.PHONY : src/Transport.c.s
 
 src/Trie.obj: src/Trie.c.obj
 .PHONY : src/Trie.obj
@@ -271,6 +343,54 @@ src/UserData.s: src/UserData.c.s
 src/UserData.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/UserData.c.s
 .PHONY : src/UserData.c.s
+
+src/UserStatus.obj: src/UserStatus.c.obj
+.PHONY : src/UserStatus.obj
+
+# target to build an object file
+src/UserStatus.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/UserStatus.c.obj
+.PHONY : src/UserStatus.c.obj
+
+src/UserStatus.i: src/UserStatus.c.i
+.PHONY : src/UserStatus.i
+
+# target to preprocess a source file
+src/UserStatus.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/UserStatus.c.i
+.PHONY : src/UserStatus.c.i
+
+src/UserStatus.s: src/UserStatus.c.s
+.PHONY : src/UserStatus.s
+
+# target to generate assembly for a file
+src/UserStatus.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/UserStatus.c.s
+.PHONY : src/UserStatus.c.s
+
+src/VehicleSave.obj: src/VehicleSave.c.obj
+.PHONY : src/VehicleSave.obj
+
+# target to build an object file
+src/VehicleSave.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/VehicleSave.c.obj
+.PHONY : src/VehicleSave.c.obj
+
+src/VehicleSave.i: src/VehicleSave.c.i
+.PHONY : src/VehicleSave.i
+
+# target to preprocess a source file
+src/VehicleSave.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/VehicleSave.c.i
+.PHONY : src/VehicleSave.c.i
+
+src/VehicleSave.s: src/VehicleSave.c.s
+.PHONY : src/VehicleSave.s
+
+# target to generate assembly for a file
+src/VehicleSave.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/VehicleSave.c.s
+.PHONY : src/VehicleSave.c.s
 
 src/WareInOut.obj: src/WareInOut.c.obj
 .PHONY : src/WareInOut.obj
@@ -368,6 +488,30 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/restart.obj: src/restart.c.obj
+.PHONY : src/restart.obj
+
+# target to build an object file
+src/restart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/restart.c.obj
+.PHONY : src/restart.c.obj
+
+src/restart.i: src/restart.c.i
+.PHONY : src/restart.i
+
+# target to preprocess a source file
+src/restart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/restart.c.i
+.PHONY : src/restart.c.i
+
+src/restart.s: src/restart.c.s
+.PHONY : src/restart.s
+
+# target to generate assembly for a file
+src/restart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/restart.c.s
+.PHONY : src/restart.c.s
+
 src/user.obj: src/user.c.obj
 .PHONY : src/user.obj
 
@@ -410,15 +554,30 @@ help:
 	@echo ... src/MyString.obj
 	@echo ... src/MyString.i
 	@echo ... src/MyString.s
+	@echo ... src/PackOut.obj
+	@echo ... src/PackOut.i
+	@echo ... src/PackOut.s
 	@echo ... src/PackageData.obj
 	@echo ... src/PackageData.i
 	@echo ... src/PackageData.s
+	@echo ... src/StorageRack.obj
+	@echo ... src/StorageRack.i
+	@echo ... src/StorageRack.s
+	@echo ... src/Transport.obj
+	@echo ... src/Transport.i
+	@echo ... src/Transport.s
 	@echo ... src/Trie.obj
 	@echo ... src/Trie.i
 	@echo ... src/Trie.s
 	@echo ... src/UserData.obj
 	@echo ... src/UserData.i
 	@echo ... src/UserData.s
+	@echo ... src/UserStatus.obj
+	@echo ... src/UserStatus.i
+	@echo ... src/UserStatus.s
+	@echo ... src/VehicleSave.obj
+	@echo ... src/VehicleSave.i
+	@echo ... src/VehicleSave.s
 	@echo ... src/WareInOut.obj
 	@echo ... src/WareInOut.i
 	@echo ... src/WareInOut.s
@@ -431,6 +590,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/restart.obj
+	@echo ... src/restart.i
+	@echo ... src/restart.s
 	@echo ... src/user.obj
 	@echo ... src/user.i
 	@echo ... src/user.s
