@@ -279,23 +279,32 @@ CMakeFiles/main.dir/src/FileManage.c.obj: D:/OI/Project/C\ course\ design/PostSt
 CMakeFiles/main.dir/src/List.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/List.c \
   D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
   D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+  D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
   D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/corecrt.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/errno.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/limits.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/malloc.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stdio.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/string.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/vadefs.h \
-  D:/OI/Project/C\ course\ design/PostStation/include/List.h
+  D:/OI/Project/C\ course\ design/PostStation/include/FileManage.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/List.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/PackageData.h
 
 CMakeFiles/main.dir/src/MyString.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/MyString.c \
   D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
@@ -352,30 +361,7 @@ CMakeFiles/main.dir/src/PackOut.c.obj: D:/OI/Project/C\ course\ design/PostStati
   D:/OI/Project/C\ course\ design/PostStation/include/UserData.h \
   D:/OI/Project/C\ course\ design/PostStation/include/cost.h
 
-CMakeFiles/main.dir/src/PackageData.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/PackageData.c \
-  D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
-  D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
-  D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
-  D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
-  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw.h \
-  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
-  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
-  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/corecrt.h \
-  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
-  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
-  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/errno.h \
-  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/limits.h \
-  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/malloc.h \
-  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
-  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
-  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
-  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stddef.h \
-  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stdlib.h \
-  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/string.h \
-  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/vadefs.h \
-  D:/OI/Project/C\ course\ design/PostStation/include/PackageData.h
-
-CMakeFiles/main.dir/src/StorageRack.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/StorageRack.c \
+CMakeFiles/main.dir/src/PackageArrive.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/PackageArrive.c \
   D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
   D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
   D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
@@ -394,9 +380,76 @@ CMakeFiles/main.dir/src/StorageRack.c.obj: D:/OI/Project/C\ course\ design/PostS
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stddef.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stdio.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/string.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/FileManage.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/List.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/PackageArrive.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/PackageData.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/Trie.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/UserData.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/WareInOut.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/WarePositionData.h
+
+CMakeFiles/main.dir/src/PackageData.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/PackageData.c \
+  D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+  D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+  D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+  D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/corecrt.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/errno.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/limits.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stdio.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/string.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/FileManage.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/PackageData.h
+
+CMakeFiles/main.dir/src/StorageRack.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/StorageRack.c \
+  D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+  D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+  D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+  D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/corecrt.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/errno.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/limits.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/math.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stdio.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/string.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   D:/OI/Project/C\ course\ design/PostStation/include/FileManage.h \
@@ -425,16 +478,20 @@ CMakeFiles/main.dir/src/Transport.c.obj: D:/OI/Project/C\ course\ design/PostSta
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stddef.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stdio.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/string.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   D:/OI/Project/C\ course\ design/PostStation/include/cost.h \
   D:/OI/Project/C\ course\ design/PostStation/include/FileManage.h \
   D:/OI/Project/C\ course\ design/PostStation/include/List.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/MyString.h \
   D:/OI/Project/C\ course\ design/PostStation/include/PackageData.h \
   D:/OI/Project/C\ course\ design/PostStation/include/Transport.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/Trie.h \
   D:/OI/Project/C\ course\ design/PostStation/include/UserData.h
 
 CMakeFiles/main.dir/src/Trie.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/Trie.c \
@@ -583,7 +640,9 @@ CMakeFiles/main.dir/src/WarePositionData.c.obj: D:/OI/Project/C\ course\ design/
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/string.h \
   D:/OI/Document/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   D:/OI/Project/C\ course\ design/PostStation/include/PackageData.h \
   D:/OI/Project/C\ course\ design/PostStation/include/WarePositionData.h
@@ -899,6 +958,7 @@ CMakeFiles/main.dir/src/main.c.obj: D:/OI/Project/C\ course\ design/PostStation/
   D:/OI/Project/C\ course\ design/PostStation/include/FileManage.h \
   D:/OI/Project/C\ course\ design/PostStation/include/List.h \
   D:/OI/Project/C\ course\ design/PostStation/include/PackOut.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/PackageArrive.h \
   D:/OI/Project/C\ course\ design/PostStation/include/PackageData.h \
   D:/OI/Project/C\ course\ design/PostStation/include/StorageRack.h \
   D:/OI/Project/C\ course\ design/PostStation/include/Transport.h \
@@ -910,7 +970,8 @@ CMakeFiles/main.dir/src/main.c.obj: D:/OI/Project/C\ course\ design/PostStation/
   D:/OI/Project/C\ course\ design/PostStation/include/WarePositionData.h \
   D:/OI/Project/C\ course\ design/PostStation/include/cost.h \
   D:/OI/Project/C\ course\ design/PostStation/include/restart.h \
-  D:/OI/Project/C\ course\ design/PostStation/include/user.h
+  D:/OI/Project/C\ course\ design/PostStation/include/user.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/userfile.h
 
 CMakeFiles/main.dir/src/restart.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/restart.c \
   D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
@@ -981,6 +1042,37 @@ CMakeFiles/main.dir/src/user.c.obj: D:/OI/Project/C\ course\ design/PostStation/
   D:/OI/Project/C\ course\ design/PostStation/include/WareInOut.h \
   D:/OI/Project/C\ course\ design/PostStation/include/WarePositionData.h \
   D:/OI/Project/C\ course\ design/PostStation/include/user.h
+
+CMakeFiles/main.dir/src/userfile.c.obj: D:/OI/Project/C\ course\ design/PostStation/src/userfile.c \
+  D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+  D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+  D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+  D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/corecrt.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/errno.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/limits.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stdio.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/FileManage.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/List.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/PackageData.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/Trie.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/UserData.h \
+  D:/OI/Project/C\ course\ design/PostStation/include/userfile.h
 
 
 D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124vnniwintrin.h:
@@ -1260,6 +1352,8 @@ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/windef.h:
 D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/waitpkgintrin.h:
 
 D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wbnoinvdintrin.h:
+
+D:/OI/Project/C\ course\ design/PostStation/src/userfile.c:
 
 D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wmmintrin.h:
 
@@ -1573,9 +1667,17 @@ D:/OI/Project/C\ course\ design/PostStation/include/Trie.h:
 
 D:/OI/Project/C\ course\ design/PostStation/include/UserData.h:
 
+D:/OI/Project/C\ course\ design/PostStation/include/userfile.h:
+
 D:/OI/Project/C\ course\ design/PostStation/include/cost.h:
 
+D:/OI/Project/C\ course\ design/PostStation/src/PackageArrive.c:
+
+D:/OI/Project/C\ course\ design/PostStation/include/PackageArrive.h:
+
 D:/OI/Project/C\ course\ design/PostStation/src/PackageData.c:
+
+D:/OI/Document/mingw64/x86_64-w64-mingw32/include/math.h:
 
 D:/OI/Project/C\ course\ design/PostStation/include/StorageRack.h:
 
@@ -1592,8 +1694,6 @@ D:/OI/Project/C\ course\ design/PostStation/src/VehicleSave.c:
 D:/OI/Project/C\ course\ design/PostStation/src/WareInOut.c:
 
 D:/OI/Project/C\ course\ design/PostStation/src/cost.c:
-
-D:/OI/Document/mingw64/x86_64-w64-mingw32/include/math.h:
 
 D:/OI/Document/mingw64/x86_64-w64-mingw32/include/pthread_time.h:
 

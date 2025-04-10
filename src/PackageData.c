@@ -1,10 +1,13 @@
+// 欧阳承风
 #include "PackageData.h"
 #include <stdlib.h>
 #include <string.h>
+#include "FileManage.h"
 
-PackageData CreatePackage(long long PhoneNumber, char *name, double distance, double volume, double weight,
+PackageData CreatePackage(long long PhoneNumber, char *name, int distance, int volume, int weight,
 	char *PlaceFrom, char *PlaceTo, int status){
 	PackageData package;
+	memset(&package, 0, sizeof(package) );
 
 	package.PhoneNumber = PhoneNumber;
 	package.distance = distance;
@@ -12,8 +15,11 @@ PackageData CreatePackage(long long PhoneNumber, char *name, double distance, do
 	package.weight = weight;
 	package.status = status;
 
+	memset(package.name, 0, sizeof(package.name) );
 	strncpy(package.name, name, 31);
+	memset(package.PlaceFrom, 0, sizeof(package.PlaceFrom) );
 	strncpy(package.PlaceFrom, PlaceFrom, 61);
+	memset(package.PlaceTo, 0, sizeof(package.PlaceTo) );
 	strncpy(package.PlaceTo, PlaceTo, 61);
 	
 	package.posID = 0;

@@ -1,3 +1,4 @@
+// 汤嘉敏
 #include"cost.h"
 #include<stdio.h>
 #include<math.h>
@@ -5,45 +6,53 @@
 double expense(UserData user,PackageData pack)
 {
 	double base = 0, extra = 0, discount = 1, vip = 1, grade = 1, total = 0, Total;
-	if (pack.distance<=50)
+	if (pack.distance<=5000)
 	{
-		base = pack.distance * 3;
+		base = pack.distance / 100.0 * 3;
 	}
 	else
 	{
-		base = (pack.distance - 50) * 1.5 + 150;
+		base = (pack.distance - 5000) / 100.0 * 1.5 + 150;
 	}
-	if (pack.volume>36000&&pack.volume<=60000)
+	if (pack.volume>3600000&&pack.volume<=6000000)
 	{
 		extra += 0.1;
 	}
-	if (pack.volume>60000)
+	if (pack.volume>6000000)
 	{
 		extra += 0.15;
 	}
-	switch (pack.status)
+	if (pack.status&1)
 	{
-	case 1:extra += 0.1;
-		break;
-	case 2:extra += 0.15;
-		break;
-	case 4:extra += 0.2;
-		break;	
+		extra += 0.1;
+	}
+	if (pack.status & 2)
+	{
+		extra += 0.15;
+	}
+	if (pack.status & 4)
+	{
+		extra += 0.2;
 	}
 	if (pack.weight>100)
 	{
 		extra += 0.2;
 	}
-	switch (user.UserStatus)
+	if (user.UserStatus&1)
 	{
-	case 1: discount = 0.9;
-		break;
-	case 2:discount = 0.85;
-		break;
-	case 4:discount = 0.6;
-		break;
-	case 8:vip = 0.9;
-		break;
+		discount = 0.9;
+	}
+	if (user.UserStatus & 2)
+	{
+		discount = 0.85;
+	}
+	if (user.UserStatus & 4)
+	{
+		discount = 0.6;
+	}
+	if (user.UserStatus & 8)
+	{
+		vip = 0.9;
 	}
 	switch (user.level)
 	{

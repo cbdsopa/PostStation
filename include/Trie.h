@@ -1,3 +1,4 @@
+// 欧阳承风
 #pragma once
 #include <stdlib.h>
 #include <List.h>
@@ -5,7 +6,6 @@
 typedef struct TrieNode{
 	struct TrieNode *child[2];
 	void *data;
-	List buf;
 }TrieNode;
 
 typedef struct Trie{

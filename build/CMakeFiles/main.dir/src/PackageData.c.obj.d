@@ -20,4 +20,10 @@ CMakeFiles/main.dir/src/PackageData.c.obj: \
  D:/OI/Document/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/errno.h \
  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/string.h \
- D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h
+ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/FileManage.h \
+ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/stdio.h \
+ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h

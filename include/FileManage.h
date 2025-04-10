@@ -1,3 +1,4 @@
+// 欧阳承风
 #pragma once
 
 #include <stdio.h>
@@ -19,3 +20,4 @@ FILE *WarePostionSave();
 int WarePositionClear();
 FILE *WarePackageSave();
 int WarePackageClear();
+int delete_all_files(const char *);

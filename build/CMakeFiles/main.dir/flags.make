@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = @CMakeFiles/main.dir/includes_C.rsp
 
-C_FLAGS = -std=gnu17
+C_FLAGS = -std=gnu17 -Wl,--stack=26843545
 

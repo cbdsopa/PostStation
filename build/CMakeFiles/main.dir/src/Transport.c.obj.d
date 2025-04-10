@@ -28,4 +28,8 @@ CMakeFiles/main.dir/src/Transport.c.obj: \
  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
  D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
- D:/OI/Project/C\ course\ design/PostStation/include/Cost.h
+ D:/OI/Project/C\ course\ design/PostStation/include/Cost.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/Trie.h \
+ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/string.h \
+ D:/OI/Document/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/MyString.h

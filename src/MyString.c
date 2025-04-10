@@ -1,3 +1,5 @@
+// 欧阳承风
+
 #include "MyString.h"
 #include <stdlib.h>
 

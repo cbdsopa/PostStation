@@ -1,3 +1,4 @@
+// 欧阳承风
 #include "WareInOut.h"
 #include "WarePositionData.h"
 #include "Trie.h"
@@ -5,18 +6,44 @@
 #include "UserData.h"
 #include "string.h"
 
-const double eps = 1e-9;
-
 PackageData WareIn(List *Manager, PackageData package, List *WarePosition, List *WarePackage){
-	if(!InputType) system("cls");
-	int index = rand() * rand() % Manager->count + 1;
+	int index = 1ll * rand() * rand() % Manager->count + 1;
 	UserData *manager = (UserData *)List_ShowTheEarliest(Manager, index);
-	
-	fprintf(STDOUT, "管理员 %s 已受理。\n", manager->name);
-	FILE* managerfile = UserOutput(manager->PhoneNumber);
-	fprintf(managerfile, "受理出库信息。\n");
-	fclose(managerfile);
-	
+	FILE* managerfile = NULL;
+	if(!InputType){
+		fprintf(STDOUT, "管理员 %s (%lld) 已受理。管理员请输入密码：\n", manager->name, manager->PhoneNumber);
+		managerfile = UserOutput(manager->PhoneNumber);
+		fprintf(managerfile, "受理入库信息。请输入密码：\n");
+	}else{
+		fprintf(STDOUT, "管理员 %s (%lld) 已受理。管理员请输入密码：\n", "Admin", 10000000000ll);
+	}
+
+	char password[23];
+	while(1)
+	{
+		fscanf(STDIN,"%20s%*[^\n]", password);
+		if(InputType){
+			if(strncmp("114514", password, 21) == 0){
+				fprintf(STDOUT,"密码验证成功!\n");
+				break;
+			}else{
+				fprintf(STDOUT,"密码验证错误,请重新输入:\n");
+			}
+		}
+		if(strncmp(manager->password, password, 21) == 0)
+		{
+			fprintf(STDOUT,"密码验证成功!\n");
+			fprintf(managerfile,"密码验证成功!\n");
+			break;
+		} 
+		else if(strncmp(manager->password, password, 21) != 0)
+		{
+			fprintf(STDOUT,"密码验证错误,请重新输入:\n");
+			fprintf(managerfile,"密码验证错误,请重新输入:\n");
+		}
+	}
+
+	if(managerfile != NULL) fclose(managerfile);
 	/* 寻找空的货架 */
 	for(ListNode *now = WarePosition->head; now != NULL; now = now->next){
 		WarePostionData *WarePos = (WarePostionData *)now->data;
@@ -29,19 +56,19 @@ PackageData WareIn(List *Manager, PackageData package, List *WarePosition, List 
 				return package;
 			}
 		}else{
-			if(WarePos->SizeType == 0 && package.volume - 36000 <= eps){
+			if(WarePos->SizeType == 0 && package.volume - 3600000 <= 0){
 				WarePos->empty = 0;
 				package.posID = WarePos->ID;
 				WarePos->package = package;
 				return package;
 			}
-			if(WarePos->SizeType == 1 && package.volume - 36000 > eps && package.volume - 60000 <= eps){
+			if(WarePos->SizeType == 1 && package.volume - 3600000 > 0 && package.volume - 6000000 <= 0){
 				WarePos->empty = 0;
 				package.posID = WarePos->ID;
 				WarePos->package = package;
 				return package;
 			}
-			if(WarePos->SizeType == 2 && package.volume - 60000 > eps){
+			if(WarePos->SizeType == 2 && package.volume - 6000000 > 0){
 				WarePos->empty = 0;
 				package.posID = WarePos->ID;
 				WarePos->package = package;
@@ -58,16 +85,16 @@ PackageData WareIn(List *Manager, PackageData package, List *WarePosition, List 
 				package_delete = package_now;
 			}
 		}else{	
-			if(package.volume - 36000 <= eps && package_now->volume - 36000 <= eps){
+			if(package.volume - 3600000 <= 0 && package_now->volume - 3600000 <= 0){
 				package_delete = package_now;
 			}
 			if(
-				package.volume - 36000 > eps && package.volume - 60000 <= eps &&
-				package_now->volume - 36000 > eps && package_now->volume - 60000 <= eps
+				package.volume - 3600000 > 0 && package.volume - 6000000 <= 0 &&
+				package_now->volume - 3600000 > 0 && package_now->volume - 6000000 <= 0
 			){
 				package_delete = package_now;
 			}
-			if(package.volume - 60000 > eps && package_now->volume - 60000 > eps){
+			if(package.volume - 6000000 > 0 && package_now->volume - 6000000 > 0){
 				package_delete = package_now;
 			}
 		}
@@ -92,20 +119,50 @@ PackageData WareIn(List *Manager, PackageData package, List *WarePosition, List 
 }
 
 int WareOut(List *Manager, PackageData package, List *WarePosition, List *WarePackage){
-	if(!InputType) system("cls");
-	int index = rand() * rand() % Manager->count + 1;
+	int index = 1ll * rand() * rand() % Manager->count + 1;
 	UserData *manager = (UserData *)List_ShowTheEarliest(Manager, index);
-	
-	fprintf(STDOUT, "管理员 %s 已受理。\n", manager->name);
-	FILE* managerfile = UserOutput(manager->PhoneNumber);
-	fprintf(managerfile, "受理出库信息。\n");
-	fclose(managerfile);
+	FILE* managerfile = NULL;
+	if(!InputType){
+		fprintf(STDOUT, "管理员 %s (%lld) 已受理。管理员请输入密码：\n", manager->name, manager->PhoneNumber);
+		managerfile = UserOutput(manager->PhoneNumber);
+		fprintf(managerfile, "受理入库信息。请输入密码：\n");
+	}else{
+		fprintf(STDOUT, "管理员 %s (%lld) 已受理。管理员请输入密码：\n", "Admin", 10000000000ll);
+	}
+
+	char password[23];
+	while(1)
+	{
+		fscanf(STDIN,"%20s%*[^\n]", password);
+		if(InputType){
+			if(strncmp("114514", password, 21) == 0){
+				fprintf(STDOUT,"密码验证成功!\n");
+				break;
+			}else{
+				fprintf(STDOUT,"密码验证错误,请重新输入:\n");
+			}
+		}
+		if(strncmp(manager->password, password, 21) == 0)
+		{
+			fprintf(STDOUT,"密码验证成功!\n");
+			fprintf(managerfile,"密码验证成功!\n");
+			break;
+		} 
+		else if(strncmp(manager->password, password, 21) != 0)
+		{
+			fprintf(STDOUT,"密码验证错误,请重新输入:\n");
+			fprintf(managerfile,"密码验证错误,请重新输入:\n");
+		}
+	}
+
+	if(managerfile != NULL) fclose(managerfile);
 
 	/* 找到包裹并删除 */
 	for(ListNode *now = WarePosition->head; now != NULL; now = now->next){
 		WarePostionData *WarePos = (WarePostionData *)now->data;
 		if(memcmp(&WarePos->package, &package, sizeof(PackageData) ) == 0){
 			WarePos->empty = 1;
+			break;
 		}
 	}
 	List_Delete(WarePackage, &package, sizeof(PackageData) );

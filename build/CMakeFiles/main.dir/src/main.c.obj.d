@@ -295,4 +295,6 @@ CMakeFiles/main.dir/src/main.c.obj: \
  D:/OI/Project/C\ course\ design/PostStation/include/PackOut.h \
  D:/OI/Project/C\ course\ design/PostStation/include/UserStatus.h \
  D:/OI/Project/C\ course\ design/PostStation/include/restart.h \
- D:/OI/Project/C\ course\ design/PostStation/include/VehicleSave.h
+ D:/OI/Project/C\ course\ design/PostStation/include/VehicleSave.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/userfile.h \
+ D:/OI/Project/C\ course\ design/PostStation/include/PackageArrive.h

@@ -1,9 +1,11 @@
+// 欧阳承风
+
 #include "FileManage.h"
 #include <stdio.h>
 #include <windows.h>
 
 FILE *UserOutput(long long PhoneNumber){
-	char path[32];
+	char path[512];
 	sprintf(path, "../data/user/%lld_log.txt", PhoneNumber);
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
@@ -14,7 +16,7 @@ FILE *UserOutput(long long PhoneNumber){
 }
 
 int UserOutClean(long long PhoneNumber){
-	char path[32];
+	char path[512];
 	sprintf(path, "../data/user/%lld_log.txt", PhoneNumber);
 	FILE *file = fopen(path, "w");
 	if(file == NULL){
@@ -26,7 +28,7 @@ int UserOutClean(long long PhoneNumber){
 }
 
 FILE *UserInfoSave(long long PhoneNumber){
-	char path[33];
+	char path[512];
 	sprintf(path, "../data/user/%lld_data.txt", PhoneNumber);
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
@@ -37,7 +39,7 @@ FILE *UserInfoSave(long long PhoneNumber){
 }
 
 int UserInfoClean(long long PhoneNumber){
-	char path[33];
+	char path[512];
 	sprintf(path, "../data/user/%lld_data.txt", PhoneNumber);
 	FILE *file = fopen(path, "w");
 	if(file == NULL){
@@ -49,7 +51,7 @@ int UserInfoClean(long long PhoneNumber){
 }
 
 FILE *UserPackageInfoSave(long long PhoneNumber){
-	char path[36];
+	char path[512];
 	sprintf(path, "../data/user/%lld_package.txt", PhoneNumber);
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
@@ -59,7 +61,7 @@ FILE *UserPackageInfoSave(long long PhoneNumber){
 	return file;
 }
 int UserPackageInfoClear(long long PhoneNumber){
-	char path[36];
+	char path[512];
 	sprintf(path, "../data/user/%lld_package.txt", PhoneNumber);
 	FILE *file = fopen(path, "w");
 	if(file == NULL){
@@ -71,7 +73,7 @@ int UserPackageInfoClear(long long PhoneNumber){
 }
 
 FILE *UserVehicleInfoSave(long long PhoneNumber){
-	char path[36];
+	char path[512];
 	sprintf(path, "../data/user/%lld_vehicle.txt", PhoneNumber);
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
@@ -82,7 +84,7 @@ FILE *UserVehicleInfoSave(long long PhoneNumber){
 }
 
 int UserVehicleInfoClear(long long PhoneNumber){
-	char path[36];
+	char path[512];
 	sprintf(path, "../data/user/%lld_vehicle.txt", PhoneNumber);
 	FILE *file = fopen(path, "w");
 	if(file == NULL){
@@ -94,7 +96,7 @@ int UserVehicleInfoClear(long long PhoneNumber){
 }
 
 FILE *UserMessageInfoSave(long long PhoneNumber){
-	char path[36];
+	char path[512];
 	sprintf(path, "../data/user/%lld_message.txt", PhoneNumber);
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
@@ -104,7 +106,7 @@ FILE *UserMessageInfoSave(long long PhoneNumber){
 	return file;
 }
 int UserMessageInfoClear(long long PhoneNumber){
-	char path[36];
+	char path[512];
 	sprintf(path, "../data/user/%lld_message.txt", PhoneNumber);
 	FILE *file = fopen(path, "w");
 	if(file == NULL){
@@ -116,7 +118,7 @@ int UserMessageInfoClear(long long PhoneNumber){
 }
 
 FILE *WarePostionSave(){
-	char path[36];
+	char path[512];
 	sprintf(path, "../data/warehouse/position_data.txt");
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
@@ -127,7 +129,7 @@ FILE *WarePostionSave(){
 }
 
 int WarePositionClear(){
-	char path[36];
+	char path[512];
 	sprintf(path, "../data/warehouse/position_data.txt");
 	FILE *file = fopen(path, "w");
 	if(file == NULL){
@@ -139,7 +141,7 @@ int WarePositionClear(){
 }
 
 FILE *WarePackageSave(){
-	char path[35];
+	char path[512];
 	sprintf(path, "../data/warehouse/package_data.txt");
 	FILE *file = fopen(path, "a");
 	if(file == NULL){
@@ -150,7 +152,7 @@ FILE *WarePackageSave(){
 }
 
 int WarePackageClear(){
-	char path[35];
+	char path[512];
 	sprintf(path, "../data/warehouse/package_data.txt");
 	FILE *file = fopen(path, "w");
 	if(file == NULL){
@@ -159,4 +161,34 @@ int WarePackageClear(){
 	}
 	fclose(file);
 	return 0;
+}
+
+
+int delete_all_files(const char *dir_path) {
+    WIN32_FIND_DATA find_data;
+    HANDLE h_find;
+    char search_path[512];
+    snprintf(search_path, 512, "%s\\*", dir_path);
+    h_find = FindFirstFile(search_path, &find_data);
+    if(h_find == INVALID_HANDLE_VALUE){
+        printf("无法打开目录 (错误码: %lu)\n", GetLastError());
+        return 0;
+    }
+    do{
+        if(strcmp(find_data.cFileName, ".") == 0 || strcmp(find_data.cFileName, "..") == 0){
+            continue;
+        }
+        char file_path[512];
+        snprintf(file_path, 512, "%s\\%s", dir_path, find_data.cFileName);
+        if (!(find_data.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) ){
+            if (DeleteFile(file_path) == 0) {
+                printf("删除文件失败 (错误码: %lu)\n", GetLastError() );
+                FindClose(h_find);
+                return 0;
+            }
+            //printf("已删除: %s\n", file_path);
+        }
+    }while(FindNextFile(h_find, &find_data) != 0);
+    FindClose(h_find);
+    return 1;
 }

@@ -224,6 +224,30 @@ src/PackOut.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/PackOut.c.s
 .PHONY : src/PackOut.c.s
 
+src/PackageArrive.obj: src/PackageArrive.c.obj
+.PHONY : src/PackageArrive.obj
+
+# target to build an object file
+src/PackageArrive.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/PackageArrive.c.obj
+.PHONY : src/PackageArrive.c.obj
+
+src/PackageArrive.i: src/PackageArrive.c.i
+.PHONY : src/PackageArrive.i
+
+# target to preprocess a source file
+src/PackageArrive.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/PackageArrive.c.i
+.PHONY : src/PackageArrive.c.i
+
+src/PackageArrive.s: src/PackageArrive.c.s
+.PHONY : src/PackageArrive.s
+
+# target to generate assembly for a file
+src/PackageArrive.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/PackageArrive.c.s
+.PHONY : src/PackageArrive.c.s
+
 src/PackageData.obj: src/PackageData.c.obj
 .PHONY : src/PackageData.obj
 
@@ -536,6 +560,30 @@ src/user.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/user.c.s
 .PHONY : src/user.c.s
 
+src/userfile.obj: src/userfile.c.obj
+.PHONY : src/userfile.obj
+
+# target to build an object file
+src/userfile.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/userfile.c.obj
+.PHONY : src/userfile.c.obj
+
+src/userfile.i: src/userfile.c.i
+.PHONY : src/userfile.i
+
+# target to preprocess a source file
+src/userfile.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/userfile.c.i
+.PHONY : src/userfile.c.i
+
+src/userfile.s: src/userfile.c.s
+.PHONY : src/userfile.s
+
+# target to generate assembly for a file
+src/userfile.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/userfile.c.s
+.PHONY : src/userfile.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -557,6 +605,9 @@ help:
 	@echo ... src/PackOut.obj
 	@echo ... src/PackOut.i
 	@echo ... src/PackOut.s
+	@echo ... src/PackageArrive.obj
+	@echo ... src/PackageArrive.i
+	@echo ... src/PackageArrive.s
 	@echo ... src/PackageData.obj
 	@echo ... src/PackageData.i
 	@echo ... src/PackageData.s
@@ -596,6 +647,9 @@ help:
 	@echo ... src/user.obj
 	@echo ... src/user.i
 	@echo ... src/user.s
+	@echo ... src/userfile.obj
+	@echo ... src/userfile.i
+	@echo ... src/userfile.s
 .PHONY : help
 
 

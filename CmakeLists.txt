@@ -8,4 +8,6 @@ file(GLOB src ${CMAKE_CURRENT_SOURCE_DIR}/src/*.c)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
+add_compile_options(-Wl,--stack=26843545)
+
 add_executable(main ${src})
